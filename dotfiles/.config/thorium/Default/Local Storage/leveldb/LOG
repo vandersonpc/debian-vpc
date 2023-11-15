@@ -1,0 +1,20 @@
+2023/11/13-12:09:01.854 3 Reusing MANIFEST /home/vanderson/.config/thorium/Default/Local Storage/leveldb/MANIFEST-000001
+2023/11/13-12:09:01.870 3 Recovering log #12
+2023/11/13-12:09:01.873 3 Reusing old log /home/vanderson/.config/thorium/Default/Local Storage/leveldb/000012.log 
+2023/11/13-12:12:16.594 5 Level-0 table #15: started
+2023/11/13-12:12:16.608 5 Level-0 table #15: 48926 bytes OK
+2023/11/13-12:12:16.623 5 Delete type=0 #12
+2023/11/13-12:12:16.624 5 Compacting 4@0 + 0@1 files
+2023/11/13-12:12:16.694 5 Generated table #16@0: 296 keys, 1252294 bytes
+2023/11/13-12:12:16.694 5 Compacted 4@0 + 0@1 files => 1252294 bytes
+2023/11/13-12:12:16.715 5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/11/13-12:12:16.717 5 Delete type=2 #7
+2023/11/13-12:12:16.717 5 Delete type=2 #8
+2023/11/13-12:12:16.717 5 Delete type=2 #15
+2023/11/13-12:12:16.718 5 Delete type=2 #11
+2023/11/13-12:14:16.595 5 Level-0 table #18: started
+2023/11/13-12:14:16.611 5 Level-0 table #18: 67498 bytes OK
+2023/11/13-12:14:16.631 5 Delete type=0 #14
+2023/11/13-12:42:45.563 5 Level-0 table #20: started
+2023/11/13-12:42:45.580 5 Level-0 table #20: 89690 bytes OK
+2023/11/13-12:42:45.599 5 Delete type=0 #17

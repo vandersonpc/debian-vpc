@@ -1,0 +1,5 @@
+[Added Associations]
+text/x-python=org.gnome.gedit.desktop;
+application/x-shellscript=org.gnome.gedit.desktop;code.desktop;
+text/plain=org.gnome.gedit.desktop;
+text/x-csrc=org.gnome.gedit.desktop;

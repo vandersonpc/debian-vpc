@@ -1,0 +1,292 @@
+<!--Start ML Modal Button-->
+<div style="display:none">
+    <div class="tb-kc-trigger-container tb-trigger-kids-center" style="display:none;">
+        <a class="tb-button tb-button-default" style="position:relative; margin-left:5px; text-decoration:none;">
+            <img class="tb-height12" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" style="margin-right: 2px; position:relative; top:-1px;">
+            <!-- Find Demonetized Videos
+            &nbsp;-->
+            <img src="{PLUGIN_FILE_ROOT}/images/modules/demonetization/demonetization.png" style="height:16px; position:relative; top:-1px;" />
+            Check
+        </a>
+    </div>
+</div>
+<!--End ML Modal Button-->
+<!--Start Base Module Template-->
+<div id="tb-kids-center-container" class="tb-module-template draggable-container" style="display:none; width:950px !important; left:35% !important;">
+    <!--Start Base Module Shadow-->
+    <div class="tb-module-shadow">
+        <!--Start BASE Module Header-->
+        <div class="tb-module-header" data-draggable="true">
+            <img class="tb-module-logo " src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon.svg" alt="tb-logo" data-draggable="false" />
+            <h1 class="tb-module-title">
+                COPPA Center
+            </h1>
+            <div class="tb-module-help">
+                <a style="vertical-align: middle;text-decoration: none;" target="_blank" href="https://www.tubebuddy.com/tools?tool=coppacenter" data-draggable="false">
+                    <i class="small material-icons tb-icon-white tb-icon-help">help_outline</i>
+                </a>
+            </div>
+            <div class="tb-module-close" data-draggable="false">
+                <i data-draggable="false" class="medium material-icons tb-icon-white">close</i>
+            </div>
+        </div>
+        <!--End Base Module Header-->
+        <!--Start Base Module Container-->
+        <div class="tb-module-content">
+            <div style="margin-top:10px; font-size: 20px; display:none;" id="tb-kc-scan-complete">
+
+                <div style="background:#f3f3f3; padding:10px; margin: -20px -10px 15px; cursor:pointer;" id="tb-fc-back">
+                <!--<div style="float:right; padding:5px;">
+                    <span style="">a</span>
+                </div>-->
+                    
+                    <i class="material-icons" style="margin:0px; font-size:.8em;">arrow_back</i>
+                    Back
+                </div>
+
+                <div class="tb-tabs-container" style="border:solid 1px #ddd; margin: 10px; position:relative;">
+                    <div id="tb-kc-mfk-filter-container" style="position:absolute; right:10px; top:10px; text-align:right; z-index:100;">
+                        <div style="    font-size: 11px;    font-weight: 600;padding-right: 7px;">
+                            "Determined By" Filter
+                        </div>
+                        <div>
+                            <select id="tb-kc-mfk-filter" style="margin-top:5px; width: 120px;">
+                                <option value="All">
+                                    Show All
+                                </option>
+                                <option value="You">
+                                    You
+                                </option>
+                                <option value="YouTube">
+                                    YouTube
+                                </option>
+                                <option value="YouAndYouTube">
+                                    You and YouTube
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="tb-kc-nmfk-filter-container" style="position:absolute; right:10px; top:10px; text-align:right; z-index:100; display:none;">
+                        <div style="    font-size: 11px;    font-weight: 600;padding-right: 7px;">
+                            "Determined By" Filter
+                        </div>
+                        <div>
+                            <select id="tb-kc-nmfk-filter" style="margin-top:5px; width: 120px;">
+                                <option value="All">
+                                    Show All
+                                </option>
+                                <option value="NoOne">
+                                    (no one)
+                                </option>
+                                <option value="You">
+                                    You
+                                </option>
+                                <option value="YouYouTubeKids">
+                                    You (YouTube~Kids)
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <ul class="tb-tabs-menu-container" style="margin-top:0px;">
+                        <li id="tb-kc-mfk-tab" class="tb-tabs-menu-item-container tb-tabs-selected-menu-item tb-tab-ripple tb-col-3" data-tab="tb-tab-mfk-content">
+                            <div class="tb-tabs-menu-item" style="text-align:left; padding-left:15px;">
+                                <div class="tb-tab-menu-item-title">
+                                    <i class="material-icons">face</i>
+                                    <span style="position:relative; top: -5px; left: 2px;">
+                                        Videos <b>Made</b> for Kids
+                                        <span id="tb-mfk-count" style="font-size:1.2em;"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="tb-kc-nmfk-tab" class="tb-tabs-menu-item-container tb-tab-ripple tb-col-3" data-tab="tb-tab-nmfk-content">
+                            <div class="tb-tabs-menu-item">
+                                <div class="tb-tabs-menu-item-title">
+                                    <i class="material-icons">wc</i>
+                                    <span style="position:relative; top: -5px; left: 2px;">
+                                        Videos <b>NOT</b> Made for Kids
+                                        <span id="tb-nmfk-count" style="font-size:1.2em;"></span>
+                                    </span>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tb-tabs-content-container">
+                        <div id="tb-tab-mfk-content" class="tb-tabs-content" style="margin-top:15px; overflow:auto;">
+                            <div id="tb-mfk-none">
+                                <div style="padding: 50px; font-size:20px; height: 223px;">
+                                    <div style="font-size:16px; margin-bottom:15px;">
+                                        Nothing here.
+                                    </div>
+                                    All of your content is currently rated as <b>Not Made for Kids</b>.
+                                </div>
+                            </div>
+                            <div id="tb-mfk-list">
+                                <table id="tb-kc-mfk-table" style="width:100%; position:relative; top:7px; background:White; z-index:9;">
+                                    <tr>
+                                        <th style="text-align:left; background:white; border-bottom:solid 2px #666; padding:5px; padding-left:10px; font-size:1.1em; ">
+                                            Video rated <i>Made for Kids</i>
+                                        </th>
+                                        <th style="text-align:center; background:white;border-bottom:solid 2px #666; width: 200px; padding:5px; font-size:1.1em;">
+                                            Rating Determined By
+                                            <i style="font-size:14px;" class="material-icons" data-tbtooltip="<div style'margin-top:14px;'><b>You</b> = YouTube's algorithm was unable to deturmine if the video was made for kids, but you manually set it as made for kids.</div><br><div style'margin-top:14px;'><b>YouTube</b> = YouTube's algorithm determined this video was made for kids, but you have not yet manually set a rating for the video yourself yet.</div><br><div style'margin-top:14px;'><b>You &amp; YouTube</b> = YouTube's algorithm determined this video was made for kids, you agreed and manually applied the made for kids rating yourself too.</div>">help_outline</i>
+                                        </th>
+                                     
+                                        <th style="text-align:center; background:white; width: 80px;border-bottom:solid 2px #666; width: 80px; padding:5px; font-size:1.1em;">
+                                            Action
+                                        </th>
+                                    </tr>
+                                </table>
+                                <div id="tb-kc-mfc-container" style="max-height:290px; height: 325px; overflow:auto">
+                                    <table style="width:100%;" id="tb-mfk-list1">
+                                        <tr id="tb-kc-mfk">
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tb-tab-nmfk-content" class="tb-tabs-content" style="margin-top:15px; overflow:auto; display:none;">
+                            <div id="tb-nmfk-none">
+                                <div style="padding: 50px; font-size:20px; height: 223px;">
+                                    <div style="font-size:16px; margin-bottom:15px;">
+                                        Nothing here.
+                                    </div>
+                                    All of your content is currently rated as <b>Made for Kids</b>.
+                                </div>
+                            </div>
+                            <div id="tb-nmfk-list">                               
+                                <table id="tb-kc-nmfk-table" style="width:100%; position:relative; top:7px; background:White; z-index:9;">
+                                    <tr>
+                                        <th style="text-align:left; background:white; border-bottom:solid 2px #666; padding:5px; padding-left:10px; font-size:1.1em;">
+                                            Video rated <i>Not Made for Kids</i>
+                                        </th>
+                                        <th style="text-align:center; position:relative; background:white;border-bottom:solid 2px #666; width: 200px; padding:5px; font-size:1.1em;">
+                                            Rating Determined By
+                                            <i style="font-size:14px;" class="material-icons" data-tbtooltip="<div style'margin-top:14px;'><b>(no one)</b> = YouTube's algorithm was unable to deturmine if the video was made for kids and you have not manually set a rating yourself either.</div><br><div style'margin-top:14px;'><b>You</b> = YouTube's algorithm was unable to deturmine if this video was made for kids, but you manually rated it as not made for kids.</div><br><div style'margin-top:14px;'><b>You (YouTube~Kids)</b> = YouTube's algorithm determined this video was made for kids but you manually overrode the setting and marked it as not made for kids.</div>">help_outline</i>
+                                        </th>                                        
+                                        <th style="text-align:center; background:white; width: 80px;border-bottom:solid 2px #666; width: 80px; padding:5px; font-size:1.1em;">
+                                            Action
+                                        </th>
+                                    </tr>
+                                </table>
+                                <div id="tb-kc-nmfc-container" style="max-height:290px; height:325px; overflow:auto">
+                                    <table style="width:100%;" id="tb-nmfk-list1">
+                                        <tr id="tb-kc-mfk2">
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div style="margin: 15px; margin-bottom:3px; text-align:right; font-size:14px;">
+
+                    <span style="float:left; padding-left:8px;">
+                        <span style="font-size:30px;" id="tb-fk-percent">1%</span>
+                        &nbsp;     of your videos are currently set as Made for Kids.
+                    </span>
+
+                    <a id="tb-kc-export" class="tb-btn tb-btn-sm tb-btn-primary">EXPORT ALL DATA</a>
+                </div>
+
+            </div>
+
+
+            <!--Start Welcome Section-->
+            <div id="tb-kids-center-info">
+                <div style="font-size:15px; line-height:20px; padding:15px; padding-bottom:7px;">
+                    <div style="font-weight:bold; font-size:14px; margin-bottom:5px">What is COPPA?</div>
+                    <div style="font-size:13px; line-height:16px; padding-left:2px; color:#555;">
+                        COPPA stands for the "Children's Online Privacy Protection Act"
+                        and in accordance with the US Federal Trade Commission (FTC),
+                        YouTube is requiring all channel to designate each video as either 'made for kids'
+                        or not.
+                        <div style="margin-top:10px; margin-bottom:15px; line-height:16px;">
+                            Failure to set your content appropriately may
+                            result in consequences on YouTube or have legal consequences under COPPA and other laws.
+                        </div>
+                        <div style="margin-top:10px; margin-bottom:15px; line-height:16px;">
+                            Please watch this video and visit links in the footer for more info.
+                        </div>
+                        <iframe type="text/html" width="400" height="225" src="https://www.youtube.com/embed/-JzXiSkoFKw" frameborder="0"></iframe>
+                        <div style="padding: 5px; text-align:center;">
+                            <span style="padding: 3px 5px; font-weight:bold;">
+                                TubeBuddy cannot offer legal advice.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div id="tb-kids-center-analysis" style="height:400px; border-left:solid 1px #ddd; padding-left:20px;">
+                <!--<div style="margin: 15px 0 5px; font-size:16px;">
+                    An Important Message from YouTube
+                </div>-->
+                <div style="margin-top:40px; font-size: 17px;" id="tb-kc-start-scan">
+                    <div id="tb-kc-thumbnail" style="margin-top:60px;">
+                        &nbsp;
+                    </div>
+                    What videos on <b>your channel</b> are made for kids?
+                    <div style="padding:25px 50px 20px; color:#666; font-size:14px; line-height:19px">
+                        TubeBuddy can scan your channel and surface videos that YouTube has identified as <i>made for kids</i>.
+                    </div>
+                    <div style="padding:10px;">
+                        <a class="tb-btn-blue" id="tb-kids-center-start">
+                            Start Scan
+                        </a>
+                        <a class="tb-btn-blue" id="tb-kids-center-results" style="display:none;">
+                            View Scan Results
+                        </a>
+                        <div id="tb-kids-center-processing" style="display:none">
+                            <div class="tb-spinner" style="height:16px; width:16px;"></div>
+                            <span style="position:relative; top:-5px; font-size:16px; font-weight:bold;">
+                                Scanning Public Videos...
+                            </span>
+                            <div id="tb-kc-cancel-process" style="margin-top:10px; font-size:12px; color:red; cursor:pointer;">
+                                cancel
+                                <div style="margin-top:20px; color:#999;">
+                                    (takes about 2 seconds per 50 videos)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="clear:both"></div>
+
+        </div>
+        <!--End BASE Module Container-->
+        <!--Start BASE Footer Module-->
+        <div class="tb-module-footer">
+
+            <div style="padding:10px; font-size:15px;">
+
+                <i data-draggable="false" class="material-icons" style="line-height: 10px !important;position: relative;top: 6px; left:-2px;">info</i>
+
+                <b>Learn More:</b>
+
+
+                <a href="https://support.google.com/youtube/answer/9528076?hl=en" target="_blank">How to determine if your content is 'made for kids'</a>
+                &nbsp;|&nbsp;
+                <a href="https://blog.tubebuddy.com/post/2019/11/12/youtube-news-comply-with-coppa-change-this-setting-now" target="_blank">TubeBuddy Blog</a>
+                &nbsp;|&nbsp;
+                <a href="https://support.google.com/youtube/answer/9383587?hl=en" target="_blank">Changes to kids content on YouTube</a>
+
+
+            </div>
+
+        </div>
+        <!--End BASE Footer-->
+    </div>
+    <!--End BASE Shadow-->
+</div>
+<!--End BASE Module Template-->

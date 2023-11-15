@@ -1,0 +1,17 @@
+2023-11-14 12:01:27.115 [info] Getting Manifest... ms-vscode.cpptools
+2023-11-14 12:01:27.270 [info] Installing extension: ms-vscode.cpptools
+2023-11-14 12:01:45.040 [info] Extension signature is verified: ms-vscode.cpptools
+2023-11-14 12:01:47.768 [info] Getting Manifest... ms-vscode.cpptools
+2023-11-14 12:01:47.792 [info] Extensions is already requested to install ms-vscode.cpptools
+2023-11-14 12:01:53.957 [info] Extracted extension to file:///home/vanderson/.vscode/extensions/ms-vscode.cpptools-1.18.3-linux-x64: ms-vscode.cpptools
+2023-11-14 12:01:53.975 [info] Renamed to /home/vanderson/.vscode/extensions/ms-vscode.cpptools-1.18.3-linux-x64
+2023-11-14 12:01:54.002 [info] Extracting extension completed. ms-vscode.cpptools
+2023-11-14 12:01:54.040 [info] Extension installed successfully: ms-vscode.cpptools
+2023-11-14 12:01:54.077 [info] Marked extension as uninstalled ms-vscode.cpptools-1.17.5-linux-x64
+2023-11-14 12:01:54.108 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/vanderson/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/vanderson/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30053)
+    at a (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30167)
+    at s.fb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async X.tb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:109:9535)

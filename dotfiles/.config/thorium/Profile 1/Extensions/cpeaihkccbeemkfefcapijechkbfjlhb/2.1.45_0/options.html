@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AMZ Suggestion Expander Settings</title>
+    <link rel="stylesheet" href="styles/license-vendor.css">
+    <style>
+        body {
+            padding: 10px;
+        }
+        #status {
+            background-color: lightyellow; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h5>AMZ Suggestion Expander Settings</h5>
+
+        <div class="form-group">
+            <label for="licenseKey">Pro License Key</label>
+            <input class="form-control" id="licenseKey" type="text">
+        </div>
+        <div>
+            If you do not have a Pro license, you can <a href="https://gum.co/asepro" target="_blank">get yours here!</a>
+        </div>
+
+        <hr>
+        <div>
+            Version:
+            <label id="version">
+        </div>
+
+        <div id="status"></div>
+        <hr>
+        <button id="save" class="btn">Save</button>
+
+    </div>
+
+    <script src="scripts/license-vendor.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/options.js"></script>
+</body>
+
+</html>

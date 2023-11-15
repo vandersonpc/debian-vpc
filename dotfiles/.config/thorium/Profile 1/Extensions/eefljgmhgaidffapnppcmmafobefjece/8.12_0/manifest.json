@@ -1,0 +1,53 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "images/icon-64.png",
+         "16": "images/icon-64.png",
+         "32": "images/icon-64.png",
+         "48": "images/icon-64.png",
+         "64": "images/icon-64.png"
+      },
+      "default_popup": "loader.html",
+      "default_title": "Titans Quick View - Amazon Niche Finder"
+   },
+   "author": "selfpublishingtitans.com - Titans Quick View",
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "css/content.css" ],
+      "exclude_matches": [ "*://*.sellercentral-europe.amazon.com/*", "*://*.sellercentral.amazon.com/*", "*://*.sellercentral.amazon.ca/*", "*://*.sellercentral.amazon.co.uk/*", "*://*.sellercentral.amazon.de/*", "*://*.sellercentral.amazon.es/*", "*://*.sellercentral.amazon.fr/*", "*://*.sellercentral.amazon.it/*", "*://*.ams.amazon.com/*", "*://*.ams.amazon.ca/*", "*://*.ams.amazon.co.uk/*", "*://*.ams.amazon.de/*", "*://*.ams.amazon.es/*", "*://*.ams.amazon.fr/*", "*://*.ams.amazon.it/*", "*://*.advertising.amazon.com/*", "*://*.advertising.amazon.ca/*", "*://*.advertising.amazon.co.uk/*", "*://*.advertising.amazon.de/*", "*://*.advertising.amazon.es/*", "*://*.advertising.amazon.fr/*", "*://*.advertising.amazon.it/*", "*://*.merch.amazon.com/*", "*://*.aws.amazon.com/*" ],
+      "js": [ "lib/xlsx.full.min.js", "lib/jquery-3.3.1.min.js", "lib/accounting.min.js", "js/content/style.js", "js/content/content-constants.js", "js/content/content.js" ],
+      "matches": [ "*://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "description": "Niche & Keyword Research Tool, Amazon Quick View BSR Data for Amazon KDP & MBA",
+   "externally_connectable": {
+      "matches": [ "*://*.selfpublishingtitans.com/*" ]
+   },
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "images/icon-64.png",
+      "16": "images/icon-64.png",
+      "32": "images/icon-64.png",
+      "48": "images/icon-64.png",
+      "64": "images/icon-64.png"
+   },
+   "incognito": "spanning",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjmcYARBr1K4VbLJI3v5UPBx+LpZ0JGUdwtH76LnNclZJShmlec4PS0pECeSFG3MzNV28PIaAnViL7NxCW/mqKgagTTDTrAUWqUgRzIxU6PR8WFS7OFbImwEHodjLuYfDxX2Ubrc90bM1XB1Idm8Z+/tKHeaMq+aZcyqD/BbQnTFXRAP7rVsJx04sL/j2vv/KQWIlLmQscYRZSm/19KCiQ80oR3fQahGnAVE6p+aDAbzyPGYt9PH18Y32nKEchZV51u9qsExrUxwUxbceflXCJy7cescvToDmOfmmnQzTugeOPV27CMNlnHeyFWd4LHToqRWBM5K2A0p0jG0mtf75oQIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "90",
+   "name": "Titans Quick View - Amazon Niche Finder",
+   "permissions": [ "storage", "background", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "8.12",
+   "web_accessible_resources": [ {
+      "matches": [ "https://selfpublishingtitans.com/*", "https://www.amazon.com.au/*", "https://www.amazon.com/*", "https://www.amazon.co.uk/*", "https://www.amazon.ca/*", "https://www.amazon.es/*", "https://www.amazon.it/*", "https://www.amazon.com.mx/*", "https://www.amazon.com.br/*", "https://www.amazon.com.tr/*", "https://www.amazon.fr/*", "https://www.amazon.de/*", "https://www.amazon.nl/*", "https://www.amazon.it/*", "https://www.amazon.in/*", "https://www.amazon.sa/*", "https://www.amazon.ae/*", "https://www.amazon.co.jp/*", "https://www.amazon.au/*", "https://www.amazon.sg/*", "https://www.amazon.pl/*", "https://www.amazon.se/*" ],
+      "resources": [ "images/icon-64.png", "images/bullhorn-solid.png", "images/home-solid.png", "images/publishing.png", "images/logo2.png", "images/Download_icon.png", "images/right-arrow.png", "images/newpic.png", "images/cursor.png", "welcome.html" ]
+   } ]
+}

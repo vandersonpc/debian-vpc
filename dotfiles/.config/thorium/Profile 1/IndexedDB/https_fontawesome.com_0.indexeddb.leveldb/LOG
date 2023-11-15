@@ -1,0 +1,7 @@
+2023/11/14-16:04:47.739 ecce Reusing MANIFEST /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/14-16:04:47.740 ecce Recovering log #3
+2023/11/14-16:04:47.740 ecce Reusing old log /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/000003.log 
+2023/11/14-16:05:03.491 eccf Level-0 table #5: started
+2023/11/14-16:05:03.505 eccf Level-0 table #5: 5535 bytes OK
+2023/11/14-16:05:03.521 eccf Delete type=0 #3
+2023/11/14-16:05:03.521 eccf Manual compaction at level-0 from (begin) .. (end); will stop at (end)

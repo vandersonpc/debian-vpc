@@ -1,0 +1,298 @@
+body {
+  width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+a {
+  color: #385898;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  background: #eee;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+.header > span {
+  display: block;
+  margin: 0 auto;
+}
+
+.header .extInfo {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.header .license {
+  margin-left: 10px;
+  color: red;
+}
+
+.b-main .row {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.toggle-button {
+  display: inline-block;
+  background-image: url(/img/off.png);
+  width: 50px;
+  height: 19px;
+  position: relative;
+  top: 6px;
+  cursor: pointer;
+}
+
+.toggle-button[data-state=on] {
+  background-image: url(/img/on.png);
+}
+
+.toggle-button[data-state=off] {
+  background-image: url(/img/off.png);
+}
+
+.container {
+  /*padding-bottom: 10px;*/
+}
+
+h4 {
+  margin: 5px 0;
+}
+
+/**
+ * Tabs
+ */
+
+.tabs {
+  display: flex;
+  text-align: center;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 10px;
+}
+
+.tab {
+  display: block;
+  flex-grow: 1;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.tab.active {
+  font-weight: bold;
+}
+
+.tab-content:not(.active) {
+  display: none;
+}
+
+
+.b-settings {
+/*  background: #eee;
+  padding: 10px;
+  border-radius: 5px;*/
+  margin-bottom: 10px;
+}
+
+.b-settings .main-settings-table {
+  border-top: none;
+}
+
+.b-settings table,
+.b-settings table tr,
+.b-settings tr td,
+.b-settings table tbody,
+.b-settings table thead,
+.b-settings table tfoot,
+.b-settings table tr th,
+.b-settings table tfoot tr tf
+{
+    margin:0;
+    padding:0;
+    background:none;
+    border:none;
+    border-collapse:collapse;
+    border-spacing:0;
+    background-image:none;
+}
+
+.b-settings table {
+  width: 100%;
+  border-top: solid 1px #ccc;
+  border-left: none;
+  border-right: none;
+}
+
+.b-settings table tr td {
+  padding: 3px 0;
+  line-height: 1.2em;
+}
+
+.b-settings tr:hover {
+  background: #eee;
+}
+
+.b-settings td label {
+  display: block;
+  cursor: pointer;
+}
+
+.b-settings td:last-child {
+  text-align: right;
+  width: 50px;
+}
+
+.b-settings input[type=checkbox] {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.b-settings input[type=number] {
+  width: 60px;
+  height: 20px;
+  text-align: right;
+}
+
+.td-range {
+  white-space: nowrap;
+}
+
+.td-range input[type=number] {
+  width: 30px;
+  height: 20px;
+}
+
+.deprecated {
+  color: #999;
+  font-size: 11px;
+}
+
+.b-support {
+  text-align: center;
+  font-size: 14px;
+  background: #fff5cc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.b-support p {
+  line-height: 1.4em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.hint {
+  display: inline-block;
+  margin: 0 2px;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  background: url(/img/help.png);
+  background-size: contain;
+}
+
+#hint-popup {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  min-width: 100px;
+  max-width: 300px;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 3px rgba(0,0,0,.25);
+  text-align: left;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333;
+  z-index: 1000;
+}
+
+/**
+ * Promo
+ */
+
+.b-promo {
+  text-align: center;
+  font-size: 14px;
+  background: #b4eafe;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.b-promo-rev {
+  background: #B3DCB9;
+}
+
+.b-promo-stools {
+  background: #fff5cc;
+}
+
+.b-promo-helium {
+  background: #fff5cc;
+}
+
+.b-promo .section {
+  margin-bottom: 0px;
+}
+
+.b-promo strong {
+  line-height: 1em;
+}
+
+.b-promo p {
+  line-height: 1.2em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.b-helium a {
+  color: #006fff;
+}
+
+/**
+ * License
+ */
+
+.license-key-section .purchase-container {
+  margin-top: 10px;
+}
+
+.license-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#license-key {
+  display: block;
+  flex-grow: 1;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.alert {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.alert-danger {
+  color: red;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="/css/filters.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="section">
+
+    <div class="counters">
+      <div>Total: <span id="total"></span></div>
+      <div>Shown: <span id="shown"></span></div>
+      <div>Filtered: <span id="filtered-out"></span></div>
+    </div>
+
+    <span class="section-title title-filters">Filters</span>
+
+    <div class="items">
+      <div class="flex">
+        <div class="item">
+          <div class="range">
+            <span>BSR range</span>
+            <input type="number" id="filterRankMin"/> -
+            <input type="number" id="filterRankMax"/>
+          </div>
+
+          <div class="range">
+            <span>Price range</span>
+            <input type="number" id="filterPriceMin"/> -
+            <input type="number" id="filterPriceMax"/>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="range">
+            <span>Number of Reviews</span>
+            <input type="number" id="filterReviewsMin"/> -
+            <input type="number" id="filterReviewsMax"/>
+          </div>
+
+
+          <div class="range">
+            <span>FBA Sellers</span>
+            <input type="number" id="filterFBASelMin"/> -
+            <input type="number" id="filterFBASelMax"/>
+          </div>
+        </div>
+
+        <div class="item">
+
+          <div class="single">
+            <span>MIN Review Rating</span>
+            <input type="number" id="filterRatingMin"/>
+          </div>
+
+          <div class="ib">
+            <span class="bool">
+              <input type="checkbox" id="filterHideSponsored"/>
+              <label for="filterHideSponsored">Hide Sponsored</label>
+            </span>
+            <span class="bool">
+              <input type="checkbox" id="filterHidePrime"/>
+              <label for="filterHidePrime">Hide Prime</label>
+            </span>
+            <span class="bool">
+              <input type="checkbox" id="filterHideSoldByAMZ"/>
+              <label for="filterHideSoldByAMZ">Hide "sold by Amazon"</label>
+            </span>
+            <span class="bool">
+              <input type="checkbox" id="filterHideNoBB"/>
+              <label for="filterHideNoBB">Hide "No BuyBox"</label>
+            </span>
+          </div>
+
+        </div>
+      </div><!-- flex -->
+    </div><!-- items -->
+    <div class="clear"></div>
+  </div><!-- section -->
+
+  <div class="section">
+    <span class="section-title">Sort By</span>
+    <span class="sort-group">
+      <span>BSR</span>
+      <a class="btn btn-sort" data-dir="desc" data-metric="rank">
+        <i class="sort-desc"></i>
+      </a>
+      <a class="btn btn-sort" data-dir="asc" data-metric="rank">
+        <i class="sort-asc"></i>
+      </a>
+    </span>
+
+    <span class="sort-group">
+      <span>Price</span>
+      <a class="btn btn-sort" data-dir="desc" data-metric="priceMax">
+        <i class="sort-desc"></i>
+      </a>
+      <a class="btn btn-sort" data-dir="asc" data-metric="priceMin">
+        <i class="sort-asc"></i>
+      </a>
+    </span>
+
+    <span class="sort-group">
+      <span>FBA Sellers</span>
+      <a class="btn btn-sort" data-dir="desc" data-metric="fbaSellersPlus">
+        <i class="sort-desc"></i>
+      </a>
+      <a class="btn btn-sort" data-dir="asc" data-metric="fbaSellersPlus">
+        <i class="sort-asc"></i>
+      </a>
+    </span>
+
+    <span class="sort-group">
+      <span>Reviews</span>
+      <a class="btn btn-sort" data-dir="desc" data-metric="reviews">
+        <i class="sort-desc"></i>
+      </a>
+      <a class="btn btn-sort" data-dir="asc" data-metric="reviews">
+        <i class="sort-asc"></i>
+      </a>
+    </span>
+
+    <span class="sort-group">
+      <span>Review Rating</span>
+      <a class="btn btn-sort" data-dir="desc" data-metric="rating">
+        <i class="sort-desc"></i>
+      </a>
+      <a class="btn btn-sort" data-dir="asc" data-metric="rating">
+        <i class="sort-asc"></i>
+      </a>
+    </span>
+  </div>
+
+
+  <div class="section">
+    <div class="item-export">
+      <span class="section-title">Export to CSV</span>
+      <a class="btn btn-export" data-target="all">All</a>
+      <a class="btn btn-export" data-target="marked">Selected</a>
+      <a class="btn-export-clear">Clear selection</a>
+    </div>
+    <div class="item-extra">
+      <a class="btn btn-reset">Reset Filters</a>
+      <span class="bool">
+        <input type="checkbox" id="infiniteScroll"/>
+        <label for="infiniteScroll">Enable Infinite Scroll</label>
+      </span>
+      <span class="bool">
+        <input type="checkbox" id="showFiltersOnTop"/>
+        <label for="showFiltersOnTop">Always on Top</label>
+      </span>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript" src="/lib/jquery-3.6.0.min.js"></script>
+  <!-- built -->
+  <script type="text/javascript" src="/js/filters.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="22" cy="22" r="22" fill="#FAFAFA"/>
+<g filter="url(#filter0_d_1508_4539)">
+<circle cx="22" cy="22" r="18" fill="white"/>
+</g>
+<g clip-path="url(#clip0_1508_4539)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.415 15.4839C19.0637 10.0735 27.6833 11.1415 30.9056 17.4613C28.6373 17.4622 25.0853 17.4607 23.1615 17.4613C21.7662 17.4618 20.8653 17.4301 19.8898 17.9437C18.7428 18.5474 17.8774 19.6665 17.5753 20.981L14.415 15.4839Z" fill="#EA4335"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.6729 21.9997C18.6729 23.8333 20.1638 25.325 21.9964 25.325C23.829 25.325 25.3199 23.8333 25.3199 21.9997C25.3199 20.1661 23.829 18.6743 21.9964 18.6743C20.1638 18.6743 18.6729 20.1661 18.6729 21.9997Z" fill="#4285F4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.2865 26.3524C21.4211 26.9067 19.2381 26.2919 18.0423 24.2279C17.1295 22.6523 14.7179 18.451 13.6217 16.5406C9.78256 22.4248 13.0914 30.4434 20.061 31.812L23.2865 26.3524Z" fill="#34A853"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25.0844 18.6743C26.6381 20.1193 26.9766 22.4593 25.9241 24.2736C25.1312 25.6406 22.6005 29.9119 21.374 31.9802C28.555 32.4228 33.7898 25.3849 31.4253 18.6743H25.0844Z" fill="#FBBC05"/>
+</g>
+<defs>
+<filter id="filter0_d_1508_4539" x="2" y="3" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1508_4539"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1508_4539" result="shape"/>
+</filter>
+<clipPath id="clip0_1508_4539">
+<rect width="20" height="20" fill="white" transform="translate(12 12)"/>
+</clipPath>
+</defs>
+</svg>

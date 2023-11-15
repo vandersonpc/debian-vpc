@@ -1,0 +1,897 @@
+<div class="tb-menu-container">
+    <div class="tb-main-portal-container">
+        <div style="position: absolute; right: 0px;">
+            <div class="tb-main-portal tb-menu" style="display:none">
+                <!--start main content-->
+                <div class="tb-main-content" style="max-height:628px; min-height:490px;">
+                    <!--start header content-->
+
+                    <div class="tb-main-content-header">
+                        <div> <img src="{PLUGIN_FILE_ROOT}/images/menu/tb-icon.svg" alt="customer logo" class="tb-main-content-header-avatar tb-menu-channel-thumbnail"></div>
+                        <div class="tb-padding-top20"><a href="#" class="tb-main-content-header-brand tb-menu-channel-title"></a></div>
+                        <div class="tb-menu-signed-in"><span class="tb-main-content-header-license tb-padding-right5">License:</span><span class="tb-main-content-header-license tb-menu-license-name"></span><span class="tb-padding-left5 tb-menu-upgrade-now-container" style="display:none;"><a target="_blank" href="#" class="tb-menu-upgrade-now">Upgrade Now!</a></span></div>
+                    </div>
+                    <!--tb nav tabs-->
+                    <ul class="tb-main-content-tabs ">
+                        <li class="tb-main-content-tabs tb-main-content-tabs-welcome" style="display:none"><span class="tb-main-content-tab" data-tabid="tb-tab-welcome">Welcome</span></li>
+                        <li class="tb-main-content-tabs tb-main-content-tabs-tools tb-menu-signed-in"><span id="tb-tools-tab" class="tb-main-content-tab" data-tabid="tb-tab-tools">Tools</span></li>
+                        <li style="display:none" class="tb-main-content-tabs tb-main-content-tabs-messages">
+                            <span class="tb-main-content-tab" data-tabid="tb-tab-messages">Messages  <img class="tb-menu-messages-icon tb-move-down3" src="{PLUGIN_FILE_ROOT}/images/icons/button-blue.png" style="height: 14px;display:none" /></span>
+                        </li>
+                        <li  class="tb-main-content-tabs tb-main-content-tabs-industrynews tb-menu-signed-in"><span id="tb-industry-news-tab" class="tb-main-content-tab" data-tabid="tb-tab-news">Industry News</span></li>
+                        <li  class="tb-main-content-tabs tb-main-content-tabs-milestones tb-menu-signed-in">
+                            <span id="tb-milestones-tab" class="tb-main-content-tab" data-tabid="tb-tab-milestones">
+                                Milestones
+                                <span class="tb-popout-milestones-tab-header-count" style="display:none;">
+                                </span>
+                            </span>
+                        </li>
+                        <li style="display:none" class="tb-main-content-tabs-signin tb-menu-signed-out"><span class="tb-main-content-tab" data-tabid="tb-tab-signin">Sign In</span></li>
+                    </ul>
+                    <div class="tb-main-content-reveal">
+                        <div class="tb-main-content-reveal-data tb-main-tab tb-tab-welcome" style="display:none;">
+                            <div style="margin: 10px 0px 0 10px;" id="tb-popout-welcome-container">
+                                <div style="font-size: 20px; color: #659D32; margin-top: 5px;">
+                                    Welcome, and <b>Thank You</b> for installing TubeBuddy!
+                                </div>
+                                <div style="font-size: 14px; color: #555; margin-top: 15px;">
+                                    <div style="color:#659D32; font-size:15px;">Step 1</div>
+                                    <a href="https://www.youtube.com/channel/UCo33niDKpTpgwZ_dohqvylg?sub_confirmation=1" target="_blank" style="text-decoration:underline;">Subscribe</a> to our channel in order to stay informed of our latest Tools, Tips &amp; Tricks
+                                    <div style="margin-top:10px; margin-left:15px;">
+                                    </div>
+                                </div>
+                                <div style="font-size: 14px; color: #555; margin-top: 15px;">
+                                    <div style="color:#659D32; font-size:15px;">Step 2</div> Watch our Getting Started video below.
+                                </div>
+                                <div style="margin-left: 0px; margin-top: 7px; margin-bottom:15px">
+                                    <iframe style="border: solid 1px #ccc;" width="520" height="290" src="//www.youtube.com/embed/qyoqz7eBMjQ?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tb-main-content-reveal-data tb-main-tab tb-tab-messages">
+                            <div class="tb-menu-messages-list tb-margin-top10">
+                                <h5>There are no Messages</h5>
+                            </div>
+                        </div>
+                        <div id="tb-tool-tab-original" class="tb-main-content-reveal-data tb-main-tab tb-tab-tools">
+                            <h5 style="margin-bottom:15px">Popular Tools &amp; Features</h5>
+                            <div class="tb-tools-container" style="margin-top:10px; text-align:left; color:#444;">
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/tagexplorer.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Keyword Explorer
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        The ultimate keyword research tool for YouTube. Uncover what people are searching for on YouTube, rank higher in search results, get relevant video topic ideas and ultimately drive more views to your videos.
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a class="tb-menu-extension-open" data-action="QuickLinksMenu_TagExplorer">Launch Keyword Explorer Now</a>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row tb-main-menu-suggested-shorts" style="display:none;">
+                                <img src="{PLUGIN_FILE_ROOT}/images/menu/suggestedshorts.png" alt="screeshot of tubebuddy suggested shorts interface" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Suggested Shorts <span id="subitem-highlight" class="tb-badge-new">New</span>
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        Analyze your videos to discover which moments had the highest retention rate and might work well as a short.
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a class="tb-menu-extension-open" data-action="QuickLinksMenu_SuggestedShorts">Go to the My Videos Page Now</a>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/clickmagnet.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Click Magnet
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        Quickly identify what content your audience is craving and learn what style of thumbnails will drive the most clicks.
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a class="tb-menu-extension-open" data-action="QuickLinksMenu_ClickMagnet">Launch Click Magnet Now</a>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/thumbnailgenerator.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Thumbnail Generator
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        Create professional quality thumbnails using still frames from your video with text and image layers added on top.
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a href="#" class="tb-menu-myvideos-link tb-menu-item" data-action="QuickLinksMenu_MyVideos">Go to the My Videos Page Now</a>
+                                        <div style="color:#777; font-weight:normal;">
+                                            Click TB Menu next to video,<br />
+                                            select "Thumbnail Generator"
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/healthreport.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Health Report
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        Get an overall look at the health and performance of your channel.
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a target="_blank" class="tb-menu-channel-health-report-link">View Health Report Now</a>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/abtests.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Video A/B Testing
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        Discover which Thumbnails, Titles, Tags &amp; Descriptions drive the most clicks and views to your videos. Test. Optimize. Improve.
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a target="_blank" class="tb-menu-channel-ab-tests-link">Create A/B Test Now</a>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/bulkcopyendscreen.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Bulk Processing
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        Update hundreds or even thousands of videos in a snap with TubeBuddy's bulk processing tools. (Update Cards, End Screens, Thumbnails, Descriptions and more!)
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a href="#" class="tb-menu-myvideos-link tb-menu-item" data-action="QuickLinksMenu_MyVideos">Go to the My Videos Page Now</a>
+                                        <div style="color:#777; font-weight:normal;">
+                                            Click the Bulk menu above list of videos
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/coppa.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        COPPA Center
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        Scan your channel and discover which videos YouTube has rated 'Made for Kids' (and which ones it hasn't).
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a class="tb-menu-extension-open" data-action="QuickLinksMenu_CoppaCenter">Launch COPPA Center</a>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/commentmoderation.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Comment Moderation
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        Reply faster using pre-made <b>Canned Responses</b>.
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a href="" class="tb-menu-comments-link tb-menu-item" data-action="QuickLinksMenu_Comments">Go to the Comments Page Now</a>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/bestpractices.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Best Practice Checks
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        100% automated Best Practice Checks will ensure that each of your videos are following YouTube's guidelines.
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a href="#" class="tb-menu-myvideos-link tb-menu-item" data-action="QuickLinksMenu_MyVideos">Go to the My Videos Page Now</a>
+                                        <div style="color:#777; font-weight:normal;">
+                                            Click the Edit button next to the video
+                                        </div>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                                <div class="tb-main-content-reveal-data-content tb-menu-tools-row" style="display:block;">
+                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/videolytics.png" style="width: 300px; float:left; margin-right:15px;" />
+                                    <div style="font-size:24px; padding-top:10px;">
+                                        Videolytics
+                                    </div>
+                                    <div style="color:#666; font-size:14px; padding-top:10px; padding-left:4px;">
+                                        Access advanced analytics and insights, instantly for any YouTube video. See how your own videos are performing or track your competitors.
+                                    </div>
+                                    <div style="margin-top:15px; font-size:14px; font-weight:bold; padding-left:14px;">
+                                        <a href="https://www.youtube.com/watch?v=oJddzb2DKTU">Go to any Video Watch Page Now</a>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                            </div>
+                            <div class="tb-menu-tb-tools-container" style="display:none;">
+                            </div>
+                        </div>
+                        <div id="tb-tool-tab-variant-container">
+                        <div class="tb-tool-tab-variant tb-main-content-reveal-data tb-main-tab tb-tab-tools">
+                            <div class="tb-tool-tab-row">
+                                <div class="tb-tool-tab-card" data-action="QuickLinksMenu_TagExplorer">
+                                    <h2 class="tb-tool-tab-header">
+                                        Keyword Explorer
+                                    </h2>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/key_active.png" alt="key active"/> </div>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/key_hover.png" alt="key hover"/> </div>
+                                    <div class="tb-tool-tab-text">
+                                        The ultimate Keyword research tool for YouTube and Google Trends
+                                    </div>
+                                </div>
+                                <div class="tb-tool-tab-card" data-action="QuickLinksMenu_MyVideos">
+                                    <a class="tb-tool-tab-link" href="https://www.youtube.com/my_videos?o=U"  target="_blank">
+                                    <h2 class="tb-tool-tab-header">
+                                        Thumbnail Generator
+                                    </h2>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/wand_active.png" alt="wand active"/> </div>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/wand_hover.png" alt="wand hover"/> </div>
+                                    <div class="tb-tool-tab-text">
+                                        Create professional quality thumbnails using still frames and images
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="tb-tool-tab-card" data-action="QuickLinksMenu_Comments">
+                                    <a href="" class="tb-tool-tab-link tb-menu-comments-link" target="_blank" >
+                                        <h2 class="tb-tool-tab-header">
+                                            Comment Moderation
+                                        </h2>
+                                        <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/question_active.png" alt="question active"/> </div>
+                                        <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/question_hover.png" alt="question hover"/> </div>
+                                        <div class="tb-tool-tab-text">
+                                            Reply faster using pre-made Canned Responses
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="tb-tool-tab-card">
+                                    <a class="tb-tool-tab-link" href="https://www.youtube.com/watch?v=oJddzb2DKTU" target="_blank">
+                                    <h2 class="tb-tool-tab-header">
+                                        Videolytics
+                                    </h2>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/camera_active.png" alt="camera active"/> </div>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/camera_hover.png" alt="camera hover"/> </div>
+                                    <div class="tb-tool-tab-text">
+                                        See how your own videos are performing or track your competitors
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tb-tool-tab-row" >
+                                <div class="tb-tool-tab-card" data-action="QuickLinksMenu_MyVideos">
+                                    <a href="#" target="_blank" class="tb-tool-tab-link tb-menu-myvideos-link" >
+                                    <h2 class="tb-tool-tab-header">
+                                        Best Practice Checks
+                                     </h2>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/list_active.png" alt="list active"/> </div>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/list_hover.png" alt="list hover"/> </div>
+                                    <div class="tb-tool-tab-icon tool-tab-icon-locked"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/lock_active.png" alt="lock active"/> </div>
+                                    <div class="tb-tool-tab-icon tool-tab-icon-locked"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/lock_hover.png" alt="lock hover"/> </div>
+                                    <div class="tb-tool-tab-text">
+                                        Ensure that each of your videos are following YouTube guidelines
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="tb-tool-tab-card">
+                                    <a href="#" target="_blank" class="tb-tool-tab-link tb-menu-channel-health-report-link">
+                                    <h2 class="tb-tool-tab-header">
+                                        Health Report
+                                    </h2>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/health_active.png" alt="health active"/> </div>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/health_hover.png" alt="health hover"/> </div>
+                                    <div class="tb-tool-tab-icon tool-tab-icon-locked"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/lock_active.png" alt="lock active"/> </div>
+                                    <div class="tb-tool-tab-icon tool-tab-icon-locked"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/lock_hover.png" alt="lock hover"/> </div>
+                                    <div class="tb-tool-tab-text">
+                                        Get an overall look at the health and performance of your channel
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="tb-tool-tab-card">
+                                    <a href="#" target="_blank" class="tb-tool-tab-link tb-menu-channel-ab-tests-link">
+                                        <h2 class="tb-tool-tab-header">
+                                            A/B Testing
+                                        </h2>
+                                        <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/ab_active.png" alt="ab active"/> </div>
+                                        <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/ab_hover.png" alt="ab hover"/> </div>
+                                        <div class="tb-tool-tab-icon tool-tab-icon-locked"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/lock_active.png" alt="lock active"/> </div>
+                                        <div class="tb-tool-tab-icon tool-tab-icon-locked"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/lock_hover.png" alt="lock hover"/> </div>
+                                        <div class="tb-tool-tab-text">
+                                            Test/optimize your videos. Use our machine learning AI Title Generator
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="tb-tool-tab-card" data-action="QuickLinksMenu_ClickMagnet">
+                                    <h2 class="tb-tool-tab-header">
+                                        Click Magnet
+                                    </h2>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/click_active.png" alt="click active"/> </div>
+                                    <div class="tb-tool-tab-icon"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/click_hover.png" alt="click hover"/> </div>
+                                    <div class="tb-tool-tab-icon tool-tab-icon-locked"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/lock_active.png" alt="lock active"/> </div>
+                                    <div class="tb-tool-tab-icon tool-tab-icon-locked"><img src="{PLUGIN_FILE_ROOT}/images/menu/tooltab/lock_hover.png" alt="lock hover"/> </div>
+                                    <div class="tb-tool-tab-text">
+                                        Advanced analytics to help win the click and get viewers watching
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tb-main-content-reveal-data tb-main-tab tb-tab-news">
+                            <div class="tb-menu-industry-news-container" style="margin-top:25px;">
+                            </div>
+                        </div>
+                        <!----- Milestones Tab ----->
+                        <div class="tb-main-content-reveal-data tb-main-tab tb-tab-milestones tb-menu-milestones">
+                            <h5>
+                                Recent Milestones <span>(last 30 days)</span>
+                            </h5>
+                            <!----- Loading Recent Milestones ----->
+                            <div class="tb-menu-milestones-loading">
+                                <span class="tb-spinner"></span>Loading...
+                            </div>
+                            <!----- Milestones styles----->
+                            <div class="tb-menu-milestones-styles" style="display: none;">
+                                <!----- FREE----->
+                                <div class="tb-menu-milestones-styles-free">
+                                    <span class="tb-menu-milestones-styles-free-title">FREE</span>
+                                    <a class="certificate-style-0">
+                                        <img data-style="style0" src="https://www.tubebuddy.com/images/Mobile/Milestones/SubscribersMilestone.png" alt="certificate style 0" class="tb-grow-animation tb-selected-style" />
+                                    </a>
+                                </div>
+                                <!----- PRO ----->
+                                <div class="tb-menu-milestones-styles-pro tb-menu-milestones-styles-disabled">
+                                    <span class="tb-menu-milestones-styles-pro-title tb-margin-top-8">PRO</span>
+                                    <div class="tb-menu-milestones-styles-pro-arrow" id="tb-pro-prev"><span class="material-icons">keyboard_arrow_up</span></div>
+                                    <div class="tb-menu-milestones-styles-pro-slide">
+                                        <div class="tb-pro-slide">
+                                            <a class="certificate-style-1"><img data-style="style1" src="https://www.tubebuddy.com/Content/images/milestones/thumbnails/style1-thumbnail-trophy.jpg" alt="certificate style 1 trophy" class="tb-grow-animation" /></a>
+                                        </div>
+                                        <div class="tb-pro-slide">
+                                            <a class="certificate-style-2"><img data-style="style2" src="https://www.tubebuddy.com/Content/images/milestones/thumbnails/style2-thumbnail-trophy.jpg" alt="certificate style 2 trophy" class="tb-grow-animation" /></a>
+                                        </div>
+                                        <div class="tb-pro-slide">
+                                            <a class="certificate-style-3"><img data-style="style3" src="https://www.tubebuddy.com/Content/images/milestones/thumbnails/style3-thumbnail-trophy.jpg" alt="certificate style 3 trophy" class="tb-grow-animation" /></a>
+                                        </div>
+                                        <div class="tb-pro-slide">
+                                            <a class="certificate-style-4"><img data-style="style4" src="https://www.tubebuddy.com/Content/images/milestones/thumbnails/style4-thumbnail-trophy.jpg" alt="certificate style 4 trophy" class="tb-grow-animation" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="tb-menu-milestones-styles-pro-arrow" id="tb-pro-next"><span class="material-icons">keyboard_arrow_down</span></div>
+                                </div>
+
+                            </div>
+                            <!----- Recent Milestones Container ----->
+                            <div class="tb-menu-milestones-container">
+                                <!--Loading-->
+                                <div class="tb-menu-milestones-container-loading" style="display:none;">
+                                    <span class="tb-spinner"></span><span class="tb-margin-left-5">Loading...</span>
+                                </div>
+                            </div>
+                            <!----- Upcoming Milestones ----->
+                            <div class="tb-menu-milestones-next">
+                                <div class="tb-menu-milestones-next-title">
+                                    Upcoming Milestones
+                                </div>
+                                <!----- Upcoming Milestones table ----->
+                                <table class="tb-menu-milestones-next-table" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <!----- Subs ----->
+                                        <td class="tb-menu-milestones-next-table-subs">
+                                            <span class="tb-menu-milestones-next-table-subtitle">SUBSCRIBERS</span><br />
+                                            <div class="tb-menu-milestones-next-table-progress">
+                                                <div class="tb-menu-milestones-next-table-progress-barOverflow">
+                                                    <div class="tb-menu-milestones-next-table-progress-bar tb-menu-milestones-next-table-subs-bar"></div>
+                                                </div>
+                                                <span class="tb-menu-sub-next tb-menu-milestones-next-table-goal"></span>
+                                            </div>
+                                            <div class="tb-menu-sub-to-go tb-menu-milestones-next-table-to-go"></div>
+                                        </td>
+                                        <!----- Views ----->
+                                        <td class="tb-menu-milestones-next-table-views">
+                                            <span class="tb-menu-milestones-next-table-subtitle">VIEWS</span><br />
+                                            <div class="tb-menu-milestones-next-table-progress">
+                                                <div class="tb-menu-milestones-next-table-progress-barOverflow">
+                                                    <div class="tb-menu-milestones-next-table-progress-bar tb-menu-milestones-next-table-views-bar"></div>
+                                                </div>
+                                                <span class="tb-menu-views-next tb-menu-milestones-next-table-goal"></span>
+                                            </div>
+                                            <div class="tb-menu-views-to-go tb-menu-milestones-next-table-to-go"></div>
+                                        </td>
+                                        <!----- Uploads ----->
+                                        <td class="tb-menu-milestones-next-table-uploads">
+                                            <span class="tb-menu-milestones-next-table-subtitle">UPLOADS</span><br />
+                                            <div class="tb-menu-milestones-next-table-progress">
+                                                <div class="tb-menu-milestones-next-table-progress-barOverflow">
+                                                    <div class="tb-menu-milestones-next-table-progress-bar tb-menu-milestones-next-table-uploads-bar"></div>
+                                                </div>
+                                                <span class="tb-menu-uploads-next tb-menu-milestones-next-table-goal"></span>
+                                            </div>
+                                            <div class="tb-menu-uploads-to-go tb-menu-milestones-next-table-to-go"></div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="tb-main-content-reveal-data tb-main-tab tb-tab-signin tb-margin-top30" style="padding-bottom:0px; margin-bottom:5px;">
+                            <div class="tb-main-content-reveal-data-content" style="text-align:center; margin-bottom:0px;">
+
+                                <div id="tb-popout-account-tabs-missing-token" style="font-size: 18px; padding: 10px 0 25px 0px; margin:0 auto;">
+                                    <div style="font-size: 24px; color: #333; margin-bottom: 5px; line-height:26px; padding-top:15px; padding-bottom:15px; margin-right:15px; border-bottom:solid 1px #eee;">
+                                        <span style="font-weight:bold">Thank you</span> for installing TubeBuddy!
+
+                                        <div style="margin-top: 10px;font-size: 16px;margin-left: 5px;">
+                                            You're now on your way to a happier and more successful
+                                            <i>You</i> on YouTube.
+                                        </div>
+                                    </div>
+                                    <div style="text-align:center">
+                                        <div style="width:500px; margin:15px auto 5px;">
+                                            Please sign in to TubeBuddy by selecting the <span style="font-weight:bold; text-decoration:underline;">same</span> YouTube channel that you are currently logged into YouTube with.
+                                            <div style="padding:27px 0 0 10px">
+
+                                                <div id="tb-privacy" class="line-height18" style="position:relative; display: none; margin-bottom: 3px;">
+                                                    <div style="font-size: 14px;" class="required-checkbox-container">
+                                                        <input class="requiredCheckbox" id="tb-agree-to-privacy" style="position:relative; top: 3px; height:15px; width:15px;" type="checkbox" />
+                                                        <label for="tb-agree-to-privacy">
+                                                            <span style="color:black">I have read and agree to the TubeBuddy</span> <a href="https://www.tubebuddy.com/privacy" target="_blank">Privacy Policy</a> &amp; <a href="https://www.tubebuddy.com/termsofuse" target="_blank">Terms of Use</a>
+                                                        </label><br />
+                                                    </div>
+
+                                                </div>
+                                                <div id="tb-subscribe" class="line-height18" style="position:relative; margin-bottom: 5px; margin-top:10px; display:none;">
+                                                    <div style="font-size: 14px;" class="">
+                                                        <input id="tb-subscribe-to-tb" style="position:relative; top: 3px; height:15px; width:15px;" type="checkbox" /> <span style="color:black">Subscribe to the  <a href="https://www.youtube.com/tubebuddy?sub_confirmation=1" target="_blank">TubeBuddy Channel</a> for our latest news &amp; updates.</span><br />
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <a id="tb-sign-in-link" style="text-decoration:none;" class="tb-missing-token-oauth-link">
+                                                    <img id="tb-sign-in-img" src="{PLUGIN_FILE_ROOT}/images/general/login.png?v=1" />
+                                                </a>
+                                                <span class="tb-spinner tb-logging-in-spinner" style="display:none; height:25px; width:25px;"></span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="tb-main-content-reveal-data tb-main-tab tb-tab-signin" style="padding-bottom:0px; margin-bottom:0px;">
+                            <table style="border:0; width:100%; text-align:left;">
+                                <tr>
+                                    <td style="width:70%; height:65px;" valign="top">
+                                        <div class="tb-main-content-reveal-data-content" style="text-align:center;color: #666;font-size: 14px;">
+
+                                            <img src="https://www.tubebuddy.com/content/images/homepage/derraleves.jpg" style="float:left; height:60px; margin:5px; border-radius:50%" />
+                                            <p style="padding-top:6px;">
+                                                "TubeBuddy has completely transformed the way I manage my personal YouTube channel and my clients' channels."
+                                                <br />
+                                                <span style="position:relative; top:5px; color:#444;">
+                                                    - Derral Eves,
+                                                    #1 YouTube Certified Expert
+                                                </span>
+                                            </p>
+
+                                            <div style="clear:both"></div>
+                                        </div>
+                                    </td>
+                                    <td style="width:35%; height:65px; margin:0px;" valign="top">
+                                        <div class="tb-main-content-reveal-data-content" style="text-align:center;color:#666;">
+                                            <a style="margin:0 auto;">
+                                                <img src="https://www.tubebuddy.com/Content/images/homepage/certified4.png" style="margin:8px auto 4px;" />
+                                            </a>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+
+                    </div>
+                    <div class="tb-menu-subscribe-tb" style="display:none; ">
+                        <div>
+                            <span style="font-weight:500; font-size:1.1em;">
+                                Get the most out of TubeBuddy by Subscribing to our channel!
+                            </span>
+                            <br />
+                            <span style="font-size:.9em">
+                                -- Tips &amp; Tricks, Community, Feature Updates, Weekly Live-Streams and more --
+                            </span>
+                            <br />
+                            <a class="tb-menu-subscribe-button" href="https://www.youtube.com/channel/UCo33niDKpTpgwZ_dohqvylg?sub_confirmation=1" target="_blank">
+                                <img src="{PLUGIN_FILE_ROOT}/images/subscribe.png" style="height:35px; margin-top:5px;" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end main content-->
+                <!--start main nav section-->
+                <div class="tb-main-menu" style="display: flex; flex-direction: column;">
+                    <div class="tb-main-menu-quick tb-menu-signed-in">
+                        <ul class="tb-menu-quick-list">
+                            <li class=""><i class="material-icons">dashboard</i> <a class="tb-menu-dashboard-link tb-menu-item" href="https://www.youtube.com/dashboard?o=U">Dashboard</a></li>
+                            <li class=""><i class="material-icons">ondemand_video</i><a class="tb-menu-myvideos-link tb-menu-item" data-action="QuickLinksMenu_MyVideos" href="https://www.youtube.com/my_videos?o=U">Videos</a> &nbsp; | &nbsp; <a class="tb-menu-live-link tb-menu-item" data-action="QuickLinksMenu_Live" href="https://www.youtube.com/my_videos?o=U">Live Streams</a></li>
+                            <li class=""><i class="material-icons">playlist_add</i><a class="tb-menu-playlists-link tb-menu-item" data-action="QuickLinksMenu_Playlists" href="https://www.youtube.com/view_all_playlists">Playlists</a></li>
+                            <!--<li class=""><i class="material-icons">videocam</i><a class="tb-menu-livedashboard-link tb-menu-item" data-action="QuickLinksMenu_LiveStreaming" href="https://www.youtube.com/live_dashboard">Live Streaming</a></li>-->
+                            <li class=""><i class="material-icons">comment</i><a class="tb-menu-comments-link tb-menu-item" data-action="QuickLinksMenu_Comments" href="https://www.youtube.com/comments">Comments</a></li>
+                            <!--<li class=""><i class="material-icons">person_add</i><a class="tb-menu-subscribers-link tb-menu-item" data-action="QuickLinksMenu_Subscribers" href="https://www.youtube.com/subscribers">Subscribers</a></li>-->
+                            <li class=""><i class="material-icons">insert_chart</i><a class="tb-menu-analytics-link tb-menu-item" data-action="QuickLinksMenu_Analytics" href="https://www.youtube.com/analytics?o=U">Analytics</a><span class="tb-menu-analytics-link-spacer">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a class="tb-menu-realtime-link tb-menu-item" data-action="QuickLinksMenu_Realtime" href="https://www.youtube.com/analytics?o=U#r=realtime">Realtime</a></li>
+                        </ul>
+                    </div>
+
+                    <ul class="tb-main-menu-collapsible">
+                        <li id="tb-extension-tools-tab" class="tb-main-menu-accordian tb-menu-signed-in">
+                            <div class="tb-main-menu-accordian-header"><i class="material-icons">apps</i>Extension Tools</div>
+                            <div id="tb-extension-tools-content" class="tb-main-menu-accordian-content">
+                                <ul>
+                                    <li class="tb-menu-extension-open" data-action="QuickLinksMenu_TagExplorer">Keyword Explorer</li>
+                                    <li class="tb-menu-extension-open" data-action="QuickLinksMenu_SeoStudio">SEO Studio</li>
+                                    <!--<li class="tb-menu-extension-open" data-action="QuickLinksMenu_SeoStudioVue">SEO Studio (Vue)</li>-->
+                                    <li class="tb-menu-extension-open" data-action="QuickLinksMenu_VideoTopicPlanner">Video Topic Planner</li>
+                                    <li class="tb-menu-extension-open" data-action="QuickLinksMenu_TagLists">Tag Lists</li>
+                                    <li class="tb-menu-extension-open" data-action="QuickLinksMenu_BestTimeToPublish">Best Time to Publish</li>
+                                    <li class="tb-menu-extension-open" data-action="QuickLinksMenu_ClickMagnet">Click Magnet</li>
+                                    <li id="tb-main-menu-quick-links-suggested-shorts" class="tb-menu-extension-open" data-action="QuickLinksMenu_SuggestedShorts" style="display:none;">Suggested Shorts</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="tb-website-tools-tab" class="tb-main-menu-accordian tb-menu-signed-in">
+                            <div class="tb-main-menu-accordian-header"><i class="material-icons">art_track</i>Website Tools</div>
+                            <div id="tb-website-tools-content" class="tb-main-menu-accordian-content ">
+                                <ul class="tb-main-menu-accordian-content-website">
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-launch-pad-link">Launch Pad</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-health-report-link">Health Report</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-valuation-link">Valuation</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-competitor-scorecard-link">Competitors</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-brand-alerts-link">Brand Alerts</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-ab-tests-link">A/B Tests</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-retention-analyzer-link">Retention Analyzer</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-backups-and-export-link">Backups & Export</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-canned-responses-link">Canned Responses</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-promo-materials-link">Promo Materials</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-search-rank-tracking-link">Search Rank Tracking</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="tb-main-menu-accordian tb-menu-signed-in">
+                            <div class="tb-main-menu-accordian-header ">
+                                <i class="material-icons">account_circle</i>
+                                My Account
+                            </div>
+                            <div class="tb-main-menu-accordian-content">
+                                <ul>
+                                    <li><a target="_blank" href="https://www.tubebuddy.com/account" class="tb-menu-extension-open-websitetool tb-menu-channel-account-link">TubeBuddy Dashboard</a></li>
+                                    <li><a target="_blank" href="https://www.tubebuddy.com/affiliates/dashboard" class="tb-menu-extension-open-websitetool tb-menu-channel-affiliate-link">Affiliate Program</a></li>
+                                    <li><a target="_blank" href="https://www.tubebuddy.com/account/perks" class="tb-menu-extension-open-websitetool tb-menu-channel-memberperks-link">Member Perks</a></li>
+                                    <li><a target="_blank" href="https://www.tubebuddy.com/account/integrations" class="tb-menu-extension-open-websitetool tb-menu-channel-intergrations-link">Integrations</a></li>
+                                    <li><a target="_blank" href="#" class="tb-menu-extension-open-websitetool tb-menu-channel-settings-link">Settings</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="tb-main-menu-accordian">
+                            <div class="tb-main-menu-accordian-header"><i class="material-icons">forum</i>Community</div>
+                            <div class="tb-main-menu-accordian-content tb-main-menu-accordian-content-support">
+                                <ul>
+                                    <li><a target="_blank" href="https://community.tubebuddy.com" class="tb-menu-extension-open-websitetool tb-menu-forum-link">Community Forums</a></li>
+                                    <li><a target="_blank" href="https://discord.gg/uVebERX" class="tb-menu-extension-open-websitetool tb-menu-discord-link">Discord Server</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="tb-main-menu-accordian">
+                            <div class="tb-main-menu-accordian-header"><i class="material-icons">perm_phone_msg</i>Support</div>
+                            <div class="tb-main-menu-accordian-content tb-main-menu-accordian-content-support">
+                                <ul>
+                                    <li><a target="_blank" href="https://tubebuddy.zendesk.com/hc/en-us" class="tb-menu-extension-open-websitetool tb-menu-email-link">Contact Us</a></li>
+                                    <li><a target="_blank" href="https://www.youtube.com/playlist?list=PLpzjxyndddwKZOrvsztnsq5Xp88ay9HzF" class="tb-menu-extension-open-websitetool tb-menu-tips-link">Tips &amp; Tricks Videos</a></li>
+                                    <li><a target="_blank" href="https://tubebuddy.zendesk.com/hc/en-us" class="tb-menu-extension-open-websitetool tb-menu-knowledge-link">Knowledge Base</a></li>
+                                    <li><a target="_blank" href="https://community.tubebuddy.com/index.php?forums/suggestions.30/" class="tb-menu-extension-open-websitetool tb-menu-suggest-link">Suggest Feature Idea</a></li>
+                                    <li class="tb-menu-debug-container" style="display:none;">
+                                        <button data-tooltip-text="Toggle debug mode" title="Toggle debug mode" class="tb-btn tb-btn-red tb-menu-debug-toggle" type="button">
+                                            <span>Debug Mode OFF</span>
+                                        </button>                                        
+                                    </li>
+                                    <li class="tb-menu-debug-load-modules-container" style="display:none;">
+                                        <button data-tooltip-text="Load Modules" title="Load Modules" class="tb-btn tb-btn-blue tb-menu-load-modules tb-margin-top-5" type="button">
+                                            <span>Load Modules</span>
+                                        </button>
+                                    </li>
+                                    <li style="margin-right:19px;">
+                                        <div class="divider"></div>
+                                        <div class=tb-main-menu-social>
+                                            <span class="tb-main-menu-social-yt">
+                                                <a href="https://www.youtube.com/c/tubebuddy?sub_confirmation=1">
+                                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/youtube.svg" alt="">
+                                                </a>
+                                            </span>
+                                            <span class="tb-main-menu-social-tw">
+                                                <a href="https://twitter.com/TubeBuddy">
+                                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/twitter.svg" alt="">
+                                                </a>
+                                            </span>
+                                            <span class="tb-main-menu-social-fb">
+                                                <a href="https://www.facebook.com/tubebuddy">
+                                                    <img src="{PLUGIN_FILE_ROOT}/images/menu/facebook.svg" alt="">
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li style="margin-right:26px;">
+                                        <div></div>
+                                        <p class="tb-main-menu-terms">
+                                            <a href="https://www.tubebuddy.com/termsofuse">
+                                                Terms of use
+                                            </a>
+                                            <a href="https://www.tubebuddy.com/privacy">
+                                                Privacy policy
+                                            </a>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="tb-menu-review-us-container">
+                        <span style="display:none;" class="tb-menu-review-us-container-chrome-container">
+                            <a href="https://chrome.google.com/webstore/detail/tubebuddy/mhkhmbddkmdggbhaaaodilponhnccicb/reviews" target="_blank">
+                                <img class="tb-menu-review-us-container-chrome-container-img" src="{PLUGIN_FILE_ROOT}/images/icons/chrome.png" />
+                            </a>
+                            <span class="tb-menu-goto-rating-container">
+                                Love TubeBuddy? <a style="text-decoration:underline;" class="tb-menu-goto-chrome-rating tb-menu-goto-rating" href="https://chrome.google.com/webstore/detail/tubebuddy/mhkhmbddkmdggbhaaaodilponhnccicb/reviews" target="_blank">Review Us!</a>
+                            </span>
+                        </span>
+                        <span style="display:none;" class="tb-menu-review-us-container-edge-container">
+                            <a href="https://microsoftedge.microsoft.com/addons/detail/feaiphogcfmhkkbodjnmbjcbaeiikbbm" target="_blank">
+                                <img class="tb-menu-review-us-container-edge-container-img" src="{PLUGIN_FILE_ROOT}/images/icons/edge.png" />
+                            </a>
+                            <span class="tb-menu-goto-rating-container">
+                                Love TubeBuddy? <a style="text-decoration:underline;" class="tb-menu-goto-chrome-rating tb-menu-goto-rating" href="https://microsoftedge.microsoft.com/addons/detail/feaiphogcfmhkkbodjnmbjcbaeiikbbm" target="_blank">Review Us!</a>
+                            </span>
+                        </span>
+                        <span style="display:none;" class="tb-menu-review-us-container-firefox-container">
+                            <a href="https://addons.mozilla.org/firefox/addon/tubebuddy-plugin/reviews/" target="_blank">
+                                <img src="{PLUGIN_FILE_ROOT}/images/icons/firefox.png" class="tb-layout-goto-rating-firefox-container-img" />
+                            </a>
+                            <span class="tb-menu-goto-rating-container">
+                                Love TubeBuddy? <a style="text-decoration:underline;" class="tb-layout-goto-firefox-rating tb-menu-goto-rating" href="https://addons.mozilla.org/firefox/addon/tubebuddy-plugin/reviews/add" target="_blank">Review Us!</a>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="tb-main-menu-branding" style="margin-top: auto;">
+                        <img src="{PLUGIN_FILE_ROOT}/images/menu/TubeBuddyLogo.svg" class="tb-main-menu-branding-logo" alt="logo" />
+                        <div class="tb-main-menu-version" style="position:relative; top:-10px;">
+                            <span class="tb-main-menu-version-text"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <span style="display:none; padding-right:10px; cursor:pointer; color: green; font-size:12px;" id="tb-layout-logged-in">
+                <img src="{PLUGIN_FILE_ROOT}/images/icons/check.png" style="position: relative;top: 3px;font-size: 16px;">
+                <a style="text-decoration:none;color:green;" target="_blank" id="tb-layout-logged-in-link">
+                    Successfully Signed In!
+                </a>
+            </span>
+            <span style="display:none; padding-right:10px; cursor:pointer; font-weight:500; color: red; font-size:12px;" class="tb-pop-out-token-error" id="tb-pop-out-token-error-id">
+                <img src="{PLUGIN_FILE_ROOT}/images/icons/error.png" style="position: relative;top: 3px;font-size: 16px;"> TubeBuddy Sign-in Required, Click Here
+            </span>
+            <button id="tb-main-menu" class="tb-my-videos tb-button tb-button-default" style="display:none">
+                <span class="tb-move-left1" style="vertical-align: middle;">
+                    <img class="tb-menu-image-logo" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" />
+                    <i class="tb-menu-image material-icons">menu</i>
+                    <img class="tb-menu-messages-image" src="{PLUGIN_FILE_ROOT}/images/icons/button-blue.png" style="vertical-align: text-bottom; height: 13px; display:none;" />
+
+                </span>
+            </button>
+        </div>
+    </div>
+    <div style="display:none" type="text/template" id="tb-menu-system-message-template">
+        <div class="tb-main-content-reveal-data-content">
+            <div class="tb-main-content-reveal-data-content-txt">
+                <div style="display:block">
+                    {0}
+                </div>
+            </div>
+            <div class="tb-main-content-reveal-data-content-date">{1}</div>
+        </div>
+    </div>
+    <!--=== Milestone message ===-->
+    <!--<div style="display:none" type="text/template" id="tb-menu-milestone-message-template">
+        <div class="tb-main-content-reveal-data-content">
+            <div class="tb-main-content-reveal-data-content-txt" style="margin: 0px;height: 100px;">
+                <div style="display:inline-block; width:110px;">
+                    <img src="{0}" style="width:100px;"/>
+                </div>
+                <div style="display:inline-block;vertical-align: top; padding: 10px 0 0;">
+                    <a href="{4}" target="_blank"><span style="color:#4A90E2; font-weight:700; font-size: 20px;">{1} Subscribers</span></a>
+
+                    <p style="color: #424242; font-size: 14px; font-weight: 500; margin-top: 4px;">{2}</p>
+
+                    <a class="tb-btn tb-btn-primary" href="{4}" target="_blank" style="margin-top: 5px; padding: 8px 15px;">Click here!</a>
+
+                </div>
+            </div>
+            <div class="tb-main-content-reveal-data-content-date">{3}</div>
+        </div>
+    </div>-->
+
+    <div style="display:none" type="text/template" id="tb-menu-tools-on-this-page-template">
+        <div class="tb-main-content-reveal-data-content tb-menu-tools-row">
+            <img src="{0}" alt="" class="tb-main-content-reveal-data-content-img-unrounded">
+            <div class="tb-main-content-reveal-data-content-txt">
+                <span><a target="_blank" href="{1}">{2}</a></span><br />
+                {3}
+            </div>
+        </div>
+    </div>
+    <div style="display:none" type="text/template" id="tb-menu-news-template">
+        <div class="tb-main-content-reveal-data-content" style="padding:1em; margin-bottom:1em;">
+            <img style="border-radius:0;width: 10%;margin: 5px 0 5px 5px;" src="{0}" alt="" class="tb-main-content-reveal-data-content-img">
+            <div class="tb-main-content-reveal-data-content-txt" style="margin-left:1em; width:77%;">
+                <span><a target="_blank" href="{1}" style="font-size:1.2em">{2}</a></span><br />
+                {3}
+            </div>
+            <div class="tb-main-content-reveal-data-content-date" style="font-size:.8em">{4}</div>
+        </div>
+    </div>
+    <!---------- Milestone item template ---------->
+    <div id="tb-milestone-item-template" class="tb-milestone-item-template" type="text/template" style="display:none">
+        <div class="tb-milestone-item-template-container">
+            <div class="tb-milestone-item-template-share">
+                <div class="tb-milestone-item-template-share-links">
+                    <div>Share:</div>
+                    <a href="{4}" target="_blank"><img src="{PLUGIN_FILE_ROOT}/images/icons/social/facebook.png" /></a>
+                    <a href="{5}" target="_blank"><img src="{PLUGIN_FILE_ROOT}/images/icons/social/twitter.png" /></a>
+                </div>
+            </div>
+            <a href="{3}" target="_blank" class="tb-milestone-item-template-certificate-link"><img class="tb-milestone-item-template-img tb-grow-animation" src="{0}" /></a>
+            <div class="tb-milestone-item-template-certificate">
+                <div class="tb-milestone-item-template-certificate-value">
+                    <a href="{3}" target="_blank">{1}</a>
+                </div>
+                <div class="tb-milestone-item-template-certificate-text">{2}</div>
+            </div>
+        </div>
+    </div>
+    <!---------- Milestone item template END ---------->
+
+    <div style="display:none" type="text/template" id="tb-menu-debug-modal-template">
+        <span id="tb-debug-modal" style="line-height: 28px; font-size: 13px;">
+            <button data-tooltip-text="Submit debug info" title="Submit debug info" class="tb-btn tb-btn-green tb-menu-debug-send" type="button">
+                <span class="yt-uix-button-content">Send Debug</span>
+            </button>
+        </span>
+    </div>
+    
+    <!-- START beta cta template -->
+    <div style="display:none;" type="text/template" id="tb-beta-cta-template" class="tb-margin-bottom-20">
+        <div class="tb-beta-experience-cta-container">
+            <div class="tb-beta-experience-cta-text">You've been granted access to our new TubeBuddy experience.</div>
+            <button id="tb-menu-beta-cta-button" class="tb-beta-experience-cta-button">
+                <span class="tb-beta-experience-cta-try-text">Try the Beta</span>
+                <span class="tb-beta-experience-cta-loading" style="display: none;"><span class="tb-beta-loader"></span>Loading...</span>
+            </button>
+        </div>
+        <div class="tb-beta-experience-cta-error-text tb-margin-top-5 tb-float-right" style="display:none;">
+            There was an issue connecting you to the beta
+        </div>
+        <div class="tb-beta-experience-privacy-links-container">
+            By clicking Try the Beta you agree to our <a href="https://www.tubebuddy.com/beta/tos/" target="_blank">Terms of Service</a> and <a href="https://www.tubebuddy.com/beta/privacy/" target="_blank">Privacy Policy</a>
+        </div>
+    </div>
+    <!-- END beta cta template -->
+    
+    <div id='tb-menu-background' style='display: none;'>
+    </div>
+    <div id='tb-modal-background' style='display: none;'>
+    </div>
+    <style>
+        @font-face {
+            font-family: 'Roboto-Regular';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Roboto-Regular');
+            src: url('{PLUGIN_FILE_ROOT}/fonts/roboto-regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Roboto-Medium';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Roboto-Medium');
+            src: url('{PLUGIN_FILE_ROOT}/fonts/roboto-medium.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Roboto-Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Roboto-Bold');
+            src: url('{PLUGIN_FILE_ROOT}/fonts/roboto-bold.ttf') format('truetype');
+        }
+        
+        #top-tool-li {
+            display: none;
+        }
+        #top-tool-container {
+            display: flex;
+            align-items: center;
+            margin-left: -11.5px;
+            width: 100%;
+            color: #444444;
+            background-color: #FFFFFF;
+            padding: 5px 0px 5px 0px;
+            padding-right: 12px;
+        }
+        
+        #top-tool-text {
+            padding-left: 11.5px;
+        }
+        
+        #top-tool-icon {
+            color: #FFFFFF;
+            background-color: #E12325;
+            border-radius: 50px;
+            padding: 3px;
+            margin-left: -11.5px;
+            animation: preloader .6s ease-in-out 1s alternate;
+            
+        }
+        
+        @keyframes preloader {
+            50% { transform: scale(2); }
+        }
+        
+    </style>
+</div>
+
+
+<div style="display: none">
+    <div id="tb-layout-notification-item-#COMMENT_ID#" class="tb-layout-notification-comment-block" style="width:95%; display:none;">
+        <div id="tb-layout-notification-item-#COMMENT_ID#-post">
+            <textarea id="tb-notification-comment-reply-#COMMENT_ID#" class="tb-notification-comment-reply" rows="3" style="width:100%; margin-top:5px;"></textarea>
+            <div class="comment-simplebox-buttons" style="text-align:right; padding:4px 0 0px; margin-bottom:0px">
+                <button class="tb-button tb-button-default tb-layout-notification-cancel-button " type="button">
+                    <span class="yt-uix-button-content">Cancel</span>
+                </button>
+                <button class="tb-layout-notification-reply-button tb-button tb-button-primary yt-uix-button-empty" type="button" aria-label="Reply" data-comment-id="#COMMENT_ID#">Reply</button>
+                <img id="tb-layout-notification-reply-loading-#COMMENT_ID#" src="{PLUGIN_FILE_ROOT}/images/general/loading1.gif" style="display:none; position:relative; top:5px;" />
+            </div>
+        </div>
+        <div id="tb-layout-notification-item-#COMMENT_ID#-posted" style="display:none;">
+            <div style="color:green; font-size:14px; padding:10px 0 0 0; margin-bottom:0px;">
+                <img src="{PLUGIN_FILE_ROOT}/images/icons/check.png" /> Comment Posted!
+            </div>
+        </div>
+    </div>
+    <div id="tb-layout-notification-item-#COMMENT_ID#" class="tb-layout-notification2-comment-block" style="width:80%; display:none; position:absolute; top:#TOP#; z-index:9999; background-color:#eee; border:solid 1px #999; border-radius:2px; margin-left:70px; padding-right:5px;">
+        <div id="tb-layout-notification-item-#COMMENT_ID#-post" style="padding:10px 8px 8px 8px;">
+            Replying to: <span style="font-weight:500">#COMMENTER#</span>
+            <textarea id="tb-notification-comment-reply-#COMMENT_ID#" class="tb-notification-comment-reply" rows="3" style="width:100%; margin-top:5px;"></textarea>
+            <div class="comment-simplebox-buttons" style="text-align:right; padding:4px 0 0px; margin-bottom:0px">
+                <button class="tb-button tb-button-default tb-layout-notification-cancel-button " type="button">
+                    <span class="yt-uix-button-content">Cancel</span>
+                </button>
+                <button class="tb-layout-notification-reply-button tb-button tb-button-primary yt-uix-button-empty" type="button" aria-label="Reply" data-comment-id="#COMMENT_ID#">Reply</button>
+                <img id="tb-layout-notification-reply-loading-#COMMENT_ID#" src="{PLUGIN_FILE_ROOT}/images/general/loading1.gif" style="display:none; position:relative; top:5px;" />
+            </div>
+        </div>
+        <div id="tb-layout-notification-item-#COMMENT_ID#-posted" style="display:none;">
+            <div style="color:green; font-size:14px; padding:4px 0 5px 4px; margin-bottom:0px;">
+                <img src="{PLUGIN_FILE_ROOT}/images/icons/check.png" style="position:relative; top:2px;" /> Comment Posted!
+            </div>
+        </div>
+    </div>
+</div>

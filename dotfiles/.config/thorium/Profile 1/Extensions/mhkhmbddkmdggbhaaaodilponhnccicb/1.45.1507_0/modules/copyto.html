@@ -1,0 +1,73 @@
+<div style="display:none">
+
+    <div style="display:none" type="text/template" id="tb-copyto-dropdown-tag-template">
+
+        <div class="tb-material-checkbox-container" style="display: block;">
+            <label class="tb-material-checkbox-label">
+                <input type="checkbox" data-tag-value="{0}" class="tb-material-checkbox-input tb-copyto-dropdown-tag" checked="checked" />
+                <span class="tb-material-checkbox-box"><span class="tb-check tb-material-checkbox-check"></span></span>
+                <span class="tb-copyto-tag-list-item">{1}</span>
+            </label>
+        </div>
+
+    </div>
+
+    <div style="display:none" type="text/template" id="tb-copyto-dropdown-template">
+
+        <div class="tb-copyto-action-dropdown" style="display:none;">
+            <!--COLUMN 1-->
+            <div class="tb-copyto-column-one">
+                <!--HEADER-->
+                <div class="tb-copyto-action-dropdown-action-option-header tb-copyto-action-dropdown-action-option-header-tags">
+                    <!--LEFT-->
+                    <div class="tb-copyto-header-tags-title tb-font-cbold tb-float-left">
+                        Tags
+                        <span class="tb-copyto-header-tag-count">
+                            (<span class="tb-copyto-action-dropdown-selected-count"></span>)
+                        </span>
+                    </div>
+                    <!--RIGHT-->
+                    <div class="tb-copyto-actions-all-none tb-float-right tb-font-size-xs">
+                        <a class="tb-copyto-action-dropdown-all tb-cursor-pointer tb-font-medium">ALL</a> / <a class="tb-copyto-action-dropdown-none tb-cursor-pointer tb-font-medium">NONE</a>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+
+                <!--TAGS CONTAINER-->
+                <div class="tb-copyto-tags-container tb-input-textfield"></div>
+
+            </div>
+
+            <!--COLUMN 2-->
+            <div class="tb-margin-left-30" style="float:left;">
+
+                <div class="tb-font-bold tb-font-color-gray tb-padding-top-15" style="font-size: 15px;">Actions</div>
+
+                <div class="tb-copyto-action-dropdown-action-option tb-copyto-clipboard-option" data-option="clipboard">
+                    <img src="{PLUGIN_FILE_ROOT}/images/icons/menu/tb-copy-icon.png" style="width: 16px;" />
+                    <span class="tb-font-book tb-font-color-blue">Copy to Clipboard</span>
+                </div>
+
+                <div class="">
+
+                    <div class="tb-copyto-copy-tag-list-title tb-font-medium">
+                        Copy to tag list
+                    </div>
+                    <div class="tb-copyto-lists-container tb-input-textfield">
+                        <span class="tb-margin-left10 tb-font-size11">Loading lists...</span>
+
+                    </div>
+
+                    <div class="tb-copyto-action-dropdown-action-option" data-option="newlist">
+                        <a id="tb-copyto-new-list-btn" class="tb-btn tb-btn-sm tb-btn-success">+ New Tag List</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

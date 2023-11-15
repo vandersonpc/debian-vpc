@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 180px;
+}
+
+.ib {
+  display: inline-block
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  background: #fafafa;
+  border: solid 1px #eee;
+}
+
+.section {
+  padding: 4px 2px;
+  border-bottom: solid 1px #eee;
+}
+
+.container .section:last-child {
+  border-bottom: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.items {
+}
+
+.item {
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.item:last-child {
+  text-align: left;
+}
+
+.section input, .section label {
+  vertical-align: middle;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-right: 10px;
+  background: #e3e3e3;
+  padding: 0 2px;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+.title-filters {
+  float: left;
+}
+
+/**
+ * Filters
+ */
+
+.item:last-child .single {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.range, .single {
+  margin-bottom: 3px;
+}
+
+.range, .single, .bool {
+  white-space: nowrap;
+}
+
+input[type=number] {
+  text-align: right;
+}
+
+input[type=checkbox] {
+  margin: 0;
+}
+
+.range input[type=number] {
+  width: 70px
+}
+
+.single input[type=number] {
+  width: 40px;
+}
+
+.bool {
+  margin-right: 10px;
+}
+
+.counters {
+  float: right;
+  text-align: right;
+  border-left: solid 1px #eee;
+  padding-left: 3px;
+  background: #fafafa;
+}
+
+.counters span {
+  display: inline-block;
+  min-width: 25px;
+}
+
+/**
+ * Sort
+ */
+
+.sort-group {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sort-group span {
+  vertical-align: middle;
+}
+
+.btn-sort {
+  display: inline-block;
+  background: #fff;
+  border: solid 1px #ccc;
+  border-radius: 2px;
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn-sort.sort-active {
+  background: #fff5cc;
+  border-color: #e68a00;
+}
+
+.sort-desc, .sort-asc {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  opacity: 0.5;
+}
+
+.sort-desc {
+  background: url(/img/icon-arrow-up.png) center center;
+  background-size: contain;
+}
+
+.sort-asc {
+  background: url(/img/icon-arrow-down.png) center center;
+  background-size: contain;
+}
+
+.btn-sort:hover i {
+  opacity: 0.8;
+}
+
+/**
+ * Export
+ */
+
+.item-export {
+  display: inline-block;
+  width: 50%;
+}
+
+.btn-export {
+  background: #fff;
+  border: solid 1px #ccc;
+  color: #333;
+  padding: 0px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 2px;
+}
+
+.btn-export:hover {
+  background: #fff5cc !important;
+  border-color: #e68a00;
+}
+
+.btn-export-clear {
+  border-bottom: dashed 1px #ccc;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.btn-export-clear:hover {
+  border-color: #e68a00;
+}
+
+/**
+ * Extra
+ */
+
+.item-extra {
+  float: right;
+  text-align: right;
+}
+
+.item-extra label {
+  font-weight: bold;
+}
+
+.btn-reset {
+  vertical-align: middle;
+  margin-right: 25px;
+  background: #fff;
+  border: solid 1px #e68a00;;
+  color: #333;
+  padding: 0px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-reset:hover {
+  background: #fff5cc !important;
+  border-color: #e68a00;
+}

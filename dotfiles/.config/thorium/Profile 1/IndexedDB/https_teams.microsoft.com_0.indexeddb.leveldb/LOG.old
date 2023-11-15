@@ -1,0 +1,19 @@
+2023/11/14-11:10:40.834 d936 Creating DB /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb since it was missing.
+2023/11/14-11:10:40.863 d936 Reusing MANIFEST /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/14-11:10:43.524 d93a Manual compaction at level-0 from '\x00'\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00(\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/11/14-11:10:50.539 d936 Level-0 table #5: started
+2023/11/14-11:10:50.628 d936 Level-0 table #5: 1573962 bytes OK
+2023/11/14-11:10:50.654 d936 Delete type=0 #3
+2023/11/14-11:10:55.118 d937 Level-0 table #7: started
+2023/11/14-11:10:55.178 d937 Level-0 table #7: 1356298 bytes OK
+2023/11/14-11:10:55.193 d937 Delete type=0 #4
+2023/11/14-11:11:20.035 d937 Compacting 1@1 + 1@2 files
+2023/11/14-11:11:20.268 d937 Generated table #8@1: 8280 keys, 1723302 bytes
+2023/11/14-11:11:20.272 d937 Compacted 1@1 + 1@2 files => 1723302 bytes
+2023/11/14-11:11:20.295 d937 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/11/14-11:11:20.295 d937 Delete type=2 #7
+2023/11/14-11:11:20.295 d937 Delete type=2 #5
+2023/11/14-11:12:08.116 d93a Level-0 table #10: started
+2023/11/14-11:12:08.148 d93a Level-0 table #10: 453874 bytes OK
+2023/11/14-11:12:08.159 d93a Delete type=0 #6
+2023/11/14-11:12:08.160 d937 Manual compaction at level-0 from '\x009\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00:\x00\x00\x00' @ 0 : 0; will stop at (end)

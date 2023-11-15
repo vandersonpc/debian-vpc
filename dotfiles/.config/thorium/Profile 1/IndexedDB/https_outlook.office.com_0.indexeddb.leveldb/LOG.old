@@ -1,0 +1,24 @@
+2023/11/14-12:08:53.707 ecce Reusing MANIFEST /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/14-12:08:53.707 ecce Recovering log #30
+2023/11/14-12:08:53.707 ecce Reusing old log /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_outlook.office.com_0.indexeddb.leveldb/000030.log 
+2023/11/14-12:08:54.279 ecdc Level-0 table #35: started
+2023/11/14-12:08:54.289 ecdc Level-0 table #35: 1536 bytes OK
+2023/11/14-12:08:54.319 ecdc Delete type=0 #30
+2023/11/14-12:08:54.320 ecce Manual compaction at level-0 from '\x00\x0c\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0d\x00\x00\x05' @ 341 : 1
+2023/11/14-12:08:54.320 ecce Compacting 1@0 + 1@1 files
+2023/11/14-12:08:54.331 ecce Generated table #36@0: 83 keys, 7304 bytes
+2023/11/14-12:08:54.331 ecce Compacted 1@0 + 1@1 files => 7304 bytes
+2023/11/14-12:08:54.343 ecce compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/11/14-12:08:54.344 ecce Delete type=2 #35
+2023/11/14-12:08:54.344 ecce Manual compaction at level-0 from '\x00\x0d\x00\x00\x05' @ 341 : 1 .. '\x00\x0d\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/11/14-12:08:54.344 ecce Level-0 table #38: started
+2023/11/14-12:08:54.353 ecce Level-0 table #38: 300 bytes OK
+2023/11/14-12:08:54.364 ecce Delete type=0 #34
+2023/11/14-12:08:54.364 ecce Delete type=2 #32
+2023/11/14-12:08:54.364 ecce Manual compaction at level-0 from '\x00\x0d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0e\x00\x00\x00' @ 0 : 0; will stop at '\x00\x0d\x00\x00\x05' @ 367 : 0
+2023/11/14-12:08:54.364 ecce Compacting 1@0 + 1@1 files
+2023/11/14-12:08:54.377 ecce Generated table #39@0: 81 keys, 7201 bytes
+2023/11/14-12:08:54.377 ecce Compacted 1@0 + 1@1 files => 7201 bytes
+2023/11/14-12:08:54.395 ecce compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/11/14-12:08:54.396 ecce Delete type=2 #38
+2023/11/14-12:08:54.396 ecce Manual compaction at level-0 from '\x00\x0d\x00\x00\x05' @ 367 : 0 .. '\x00\x0e\x00\x00\x00' @ 0 : 0; will stop at (end)

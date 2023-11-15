@@ -1,0 +1,157 @@
+<div style="display:none">
+    <style>
+        .char-counter {
+            visibility: visible !important;
+        }
+
+        /*.style-scope{
+            top: -5px;
+        }*/
+        .tb-edit-video-studio-thumbnail-analyzer{
+            display: inline;
+        }
+    </style>
+    <script>
+        document.getElementById("copy-button").style.top = "-5px";
+    </script>
+    <div class="tb-edit-video-studio-legend">
+        <div>
+            <div style="display:none;" class="tb-edit-video-studio-loading-tag-rankings">
+                <img src="{PLUGIN_FILE_ROOT}/images/general/loading1.gif" alt="loading spinner" /> <span>Loading Search Rankings...</span>
+            </div>
+            <div style="display:none;" class="tb-edit-video-studio-loading-tag-rankings-legend">
+            </div>
+            <div style="display:none;" class="tb-edit-video-studio-loading-tag-rankings-error">
+                <span>One or more search rank is not available  </span> <a style="" href="https://tubebuddy.zendesk.com/hc/en-us/articles/9327172037403" target="_blank">why?</a>
+            </div>
+        </div>
+
+        <div class="tb-edit-video-studio-tag-button-container">
+            <div class="tb-edit-video-studio-tag-button-header">
+                <div class="tb-edit-video-studio-tag-button-header-h1">
+                    <img src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" alt="tubebuddy icon" class="tb-height11 tb-edit-video-studio-tag-button-header-logo">
+                    <span class="tb-font-size13 tb-edit-video-studio-tag-button-header-text">Tag Tools</span>
+                </div>
+            </div>
+            <div>
+                <div class="tb-padding-left15 tb-padding-right15 tb-margin-bottom15 tb-edit-video-studio-tag-tools-content">
+                    <div class="tb-margin-bottom5">
+                        <button class="tb-btn-grey tb-edit-video-studio-tag-button " data-action="copy" style="margin-bottom:5px;">
+                            <img src="{PLUGIN_FILE_ROOT}/images/icons/copy.png" alt="copy icon" style="height:12px; margin-right:3px; position:relative; top:2px;" />
+                            Copy
+                        </button>
+                        <button data-action="sort" class="tb-btn-grey tb-edit-video-studio-tag-button tb-margin-left2">
+                            <img src="{PLUGIN_FILE_ROOT}/images/icons/updown.png" alt="sort icon" style="height:12px; margin-right:3px; position:relative; top:2px;" />
+                            Sort
+                        </button>
+                        <button data-action="import" class="tb-btn-grey tb-edit-video-studio-tag-button tb-margin-left2">
+                            <img src="{PLUGIN_FILE_ROOT}/images/icons/skip.png" alt="import icon" style="height:12px; margin-right:3px; position:relative; top:2px;" />
+                            Import
+                        </button>
+                        <button data-action="translate" class="tb-btn-grey tb-edit-video-studio-tag-button">
+                            <img src="{PLUGIN_FILE_ROOT}/images/icons/pen.png" alt="translate icon" style="height:12px; margin-right:3px; position:relative; top:2px;" />
+                            Translate
+                        </button>
+                        
+                        <button class="tb-btn-grey tb-edit-video-studio-tag-button" data-action="explore">
+                            <img src="{PLUGIN_FILE_ROOT}/images/icons/search.png" alt="search icon" style="height:12px; margin-right:3px; position:relative; top:2px;" />
+                            <span id="tb-edit-studio-ke-label">Keyword Explorer</span>
+                        </button>
+                        
+                        <button data-action="search" class="tb-btn-grey tb-edit-video-studio-tag-button tb-edit-video-studio-tag-ranking tb-margin-top5" style="display: none;">
+                            <img src="{PLUGIN_FILE_ROOT}/images/icons/rank.png" alt="ranking icon" style="height:12px; margin-right:3px; position:relative; top:2px;" />
+                            Show Search Rankings
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tb-edit-video-studio-suggested-tags-plugin">
+        </div>
+        <div class="tb-edit-video-studio-thumbnail-tools-container">
+            <div class="tb-edit-video-studio-thumbnail-analyzer" style="display:none;">
+                <button data-action="thumbnail" class="tb-btn-grey tb-margin-left2 tb-edit-video-studio-thumbnail-analyzer-button" style="font-family: 'Roboto-Bold', sans-serif; font-weight: 600; ">
+                    <img src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" alt="tubebuddy icon" class="tb-height11 tb-edit-video-studio-tag-button-header-logo" alt="tubebuddy logo">
+                    Thumbnail Analyzer
+                </button>
+            </div>
+            <div class="tb-edit-video-studio-thumbnail-generator" style="display:none;">
+                <button data-action="thumbnail" class="tb-btn-grey tb-margin-left5 tb-edit-video-studio-thumbnail-generator-button" style="font-family: 'Roboto-Bold', sans-serif; font-weight: 600; ">
+                    <img src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" alt="tubebuddy icon" class="tb-height11 tb-edit-video-studio-tag-button-header-logo">
+                    Create Thumbnail
+                </button>
+            </div>
+        </div>  
+    </div>
+    
+    <div id="tb-edit-video-studio-loading-tag" type="text/template" style="display:none">
+        <div class="tb-edit-video-studio-tag-rank-studio" title="Where this video ranks in YouTube Search Results">
+            {0}
+        </div>
+    </div>
+
+    <div class="tb-edit-video-studio-cards-container tb-padding-5" >
+        <img class="tb-height11 tb-move-down4" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" alt="tubebbudy icon" />
+        <input class="tb-edit-video-studio-cards-template tb-move-down5" type="checkbox" />
+        <span class="tb-font-size-14 tb-move-down3">Set this Video as an <i>Cards Template</i></span>
+        &nbsp;
+        <a style="vertical-align: middle;text-decoration: none;" target="_blank" href="https://www.tubebuddy.com/tools?tool=cardtemplates">
+            <i class="small material-icons tb-icon-gray tb-icon-help tb-move-down4">help_outline</i>
+        </a>
+        <span class="tb-margin-left15 tb-move-down3 tb-edit-video-studio-cards-template-enabled">Template Name:</span>
+        <a maxlength="200" class="tb-edit-video-studio-cards-template-title-input tb-edit-video-studio-cards-template-enabled tb-move-down3"></a>
+
+        <span style="color:green; padding-left:10px; font-size:11px; display:none;" class="tb-video-cards-changes-saved tb-move-down2">
+            <img src="{PLUGIN_FILE_ROOT}/images/icons/check.png" alt="confirmed check" style="height:12px; position:relative; top:2px;" /> changes saved
+        </span>
+
+    </div>
+    <div class="tb-edit-video-studio-endscreens-container tb-padding-5" >
+        <img class="tb-height11 tb-move-down4" alt="tubebuddy icon" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" />
+        <input class="tb-edit-video-studio-endscreens-template tb-move-down5" type="checkbox" />
+        <span class="tb-font-size-14 tb-move-down3">Set this Video as an <i>End Screen Template</i></span>
+        &nbsp;
+        <a style="vertical-align: middle;text-decoration: none;" target="_blank" href="https://www.tubebuddy.com/tools?tool=endscreentemplates">
+            <i class="small material-icons tb-icon-gray tb-icon-help tb-move-down4">help_outline</i>
+        </a>
+        <span class="tb-margin-left15 tb-move-down3 tb-edit-video-studio-template-enabled">Template Name:</span>
+        <a maxlength="200" class="tb-edit-video-studio-template-title-input tb-edit-video-studio-template-enabled tb-move-down3"></a>
+
+        <span style="color:green; padding-left:10px; font-size:11px; display:none;" class="tb-video-endscreens-changes-saved tb-move-down2">
+            <img src="{PLUGIN_FILE_ROOT}/images/icons/check.png" alt="check icon" style="height:12px; position:relative; top:2px;" /> changes saved
+        </span>
+
+    </div>
+    
+    <div style="display:none" id="tb-edit-video-studio-endscreens-template-button-template">
+        <button id="tb-edit-video-studio-apply-endscreen-template-button" class="tb-btn tb-btn-sm tb-btn-grey" title="Apply TubeBuddy End Screen Template">
+            <img class="tb-height11 tb-move-down2 tb-margin-right-3" alt="tubebuddy icon" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" />
+            Apply Template
+        </button>
+    </div>
+
+    <div style="display:none" id="tb-edit-video-studio-cards-template-button-template">
+        <div class="tb-flex tb-items-center tb-margin-left-20">
+            <button id="tb-edit-video-studio-apply-cards-template-button" class="tb-btn tb-btn-sm tb-btn-grey " title="Apply TubeBuddy Cards Template">
+                <img class="tb-height11 tb-move-down2 tb-margin-right-3" alt="tubeBuddy icon" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" />
+                Apply Template
+            </button>
+        </div>
+    </div>
+
+
+    <div style="display:none" id="tb-edit-video-studio-chapter-editor-template">
+        <div class="tb-edit-video-studio-chapter-editor-info tb-mb-6" style="display:none;">
+            <div class="tb-font-medium tb-text-2xl">Add Chapters</div>
+            <div id="tb-edit-video-studio-chapter-editor-desc" class="tb-mt-3 tb-mb-4">
+                Add Chapters to your videos to make it easier for your audience to navigate to and rewatch specific parts.
+            </div>
+            <button id="tb-edit-video-studio-chapter-editor-trigger" style="font-family: 'Roboto-Bold', sans-serif; font-weight: 600; " class="tb-btn tb-btn-grey" title="Add Chapters">
+                <img class="tb-height11 tb-move-down2 tb-margin-right-3" alt="tubeBuddy Icon" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg" />
+                Add Chapters
+            </button>
+        </div>
+    </div>
+</div>
+

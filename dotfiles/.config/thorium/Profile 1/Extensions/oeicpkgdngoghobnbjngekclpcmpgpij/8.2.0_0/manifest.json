@@ -1,0 +1,33 @@
+{
+   "action": {
+      "default_icon": "images/logo2.png"
+   },
+   "background": {
+      "service_worker": "backgroundScripts/background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "main.css" ],
+      "exclude_matches": [ "https://www.etsy.com/your/*", "https://www.etsy.com/*/your/*", "https://www.etsy.com/messages*", "https://www.etsy.com/developers/*", "https://www.etsy.com/oauth/*", "https://www.etsy.com/shop/*/edit*", "https://www.etsy.com/oauth2/*" ],
+      "js": [ "production.js" ],
+      "matches": [ "*://www.etsy.com/*" ],
+      "media": [  ],
+      "run_at": "document_end"
+   } ],
+   "description": "Etsy product listings tool and the search on Etsy made easy",
+   "icons": {
+      "128": "images/logo2.png",
+      "16": "images/logo2.png",
+      "48": "images/logo2.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkevZVMOHXXagjwtC6OrLVQ+nKSZjBi8/hhfl+tbAAtpGKfkn54i+JUPuBlh//UACWyA9LBhHmetKxlp+xFLFmH+AWrd7eicleQKmOzvVML4+UTx9fcgTp76DH2go4ed7Lj4S2BwS98+ZLNohZM4J5/o+lBYPhVjeCHnvnNDNTO9smjreeMnp7fPwUNN+v4AzBEtd5IeGvyNmKND3WOCKW5K3H++egs2COmw2jie2TGXMzyiCMkPJOBLLPag5hGhnFDa6cj9nFPM0RLqVNvlhu/KK7scDw69uzmkUkXraUiSivw34jjSVghLK+ntK3zC4tGwgrhBkxAWPEgbqT+v7HwIDAQAB",
+   "manifest_version": 3,
+   "name": "EverBee",
+   "permissions": [ "storage", "tabs", "activeTab" ],
+   "short_name": "EverBee",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "8.2.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "images/*", "svg/*", "everbeeInstalled.js" ]
+   } ]
+}

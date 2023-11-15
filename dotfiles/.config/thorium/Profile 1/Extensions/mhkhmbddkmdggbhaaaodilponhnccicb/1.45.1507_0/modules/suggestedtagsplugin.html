@@ -1,0 +1,100 @@
+<div class="tb-suggested-tags-plugin-container" style="min-height: 100px;">
+    <div class="tb-suggested-tags-row1">
+        <div class="tb-suggested-tags-row1-inner">
+            <img src="{plugin_file_root}/images/branding/tb-icon-transparent.svg" style="position:relative; top:1px; margin-left:-2px; margin-bottom:0px; display:none;" class="tb-height11 tb-edit-video-studio-show-inline" />
+            <span style="color:#333; font-weight:500;" class="tb-font-size13"> Recommended Tags<span style="color: rgba(0,0,0,.55);display: inline-block;"> &nbsp;(consider adding if relevant)</span></span>
+        </div>
+        <div title="Loading scores" class="tb-suggested-tags-scores-loading tb-spinner" style="display:none"></div>
+        <div class="tb-suggested-tags-scores-refresh-scores-container" style="display:none;">
+            <button title="The tags in this list have changed. Click refresh scores to get the latest tag scores." class="tb-suggested-tags-scores-refresh-scores">Refresh scores</button>
+        </div>
+    </div>
+    <div class="tb-suggested-tags-row2" style="display:none; border-bottom:0px;">
+        <div class="tb-suggested-tags-video-topic-container">
+            <div style="border-bottom:solid 1px #ddd; padding: 6px 8px 8px;">
+                <div class="tb-suggested-tags-video-topic-container-doesntexist" style="padding-top:2px; padding-left:4px;">
+                    <img src='{PLUGIN_FILE_ROOT}/images/icons/target.png' style="height: 15px;width: 15px;position: relative;top: 3px;left: -2px;" />
+                         Want more specific tags? <a class="tb-suggested-tags-video-topic" style="text-decoration:underline;">Tell us</a> the Keyword you&#39;re targeting in this video.
+                </div>
+                <div class="tb-suggested-tags-video-topic-container-exists tb-margin-left5 tb-margin-right5" style="display:none">
+                    <img src='{PLUGIN_FILE_ROOT}/images/icons/target.png' style="height: 15px;width: 15px;position: relative;top: 3px;left: -2px;" />
+                    <span style="font-weight:500">Target Keyword</span>:
+                    <a class="tb-suggested-tags-video-topic-modify"></a>
+                    <i title="remove keyword" class="tb-suggested-tags-video-topic-delete small material-icons tb-red tb-move-down3 tb-font-size15 tb-cursor-pointer">close</i>
+                </div>
+            </div>
+            <div style="padding:6px 8px 4px">
+                <img src='{PLUGIN_FILE_ROOT}/images/icons/up-down.png' style="height:16px;width:16px;position: relative;top: 3px;left: 2px;" />
+                <span style="margin-left:3px; font-weight:500">Sort Tags by:</span>
+
+                <span class="tb-radio tb-move-down2" style="">
+                    <input style="display:none;" disabled="disabled" id="suggestedtagsplugin-radio1" class="tb-radio" type="radio" name="suggestedtagsplugin" value="Relevance" checked="checked" />
+                    <label for="suggestedtagsplugin-radio1" class="tb-radio-label">Relevance</label>
+                    <span id="tb-what-is-weighted" class="tb-margin-right5" style="cursor:pointer" data-tbtooltip='<span style=font-weight:500>Relevance:</span><br> Tags will be sorted based on how relevant they are to your existings tags, title and Target Keyword, while ensuring they are phrases people actively search for on YouTube.</span>'>
+                        <i class="material-icons tb-font-size12">help_outline</i>
+                    </span> 
+                </span>
+                <span class="tb-radio tb-move-down2" style="">
+                    <input style="display:none;" disabled="disabled" id="suggestedtagsplugin-radio2" class="tb-radio" type="radio" name="suggestedtagsplugin" value="score" />
+                    <label for="suggestedtagsplugin-radio2" class="tb-radio-label">Keyword Score</label>
+                    <span id="tb-what-is-weighted" class="tb-margin-right5" style="cursor:pointer" data-tbtooltip='<span style=font-weight:500>Keyword Score:</span><br> Tags will be sorted by their overall Keyword Explorer score. If you do not see a score next to a tag, click the magnifying glass to load it.</span><br><br>Generally, tags with green scores <span  class="tb-suggested-tags-plugin-tag-score-container" style="border-color:#00AE00; padding:1px; margin:0px;" title="Tag Score"><span class="tb-suggested-tags-plugin-tag-score-text" datascore="86">86</span></span> are best, then yellow/orange <span class="tb-suggested-tags-plugin-tag-score-container" style="border-color:#F87E00;padding:1px; margin:0px;" title="Tag Score"><span class="tb-suggested-tags-plugin-tag-score-text" datascore="36">36</span></span> and finally, red <span class="tb-suggested-tags-plugin-tag-score-container" style="border-color:#F40000;padding:1px; margin:0px;" title="Tag Score"><span class="tb-suggested-tags-plugin-tag-score-text" datascore="11">11</span></span>.'>
+                        <i class="material-icons tb-font-size12">help_outline</i>
+                    </span>
+
+                </span>
+                <span class="tb-radio tb-move-down2" id="tb-suggested-tags-search-traffic">
+                    <input style="display:none;" disabled="disabled" id="suggestedtagsplugin-radio3" class="tb-radio" type="radio" name="suggestedtagsplugin" value="traffic" />
+                    <label for="suggestedtagsplugin-radio3" class="tb-radio-label">Search Traffic</label>
+                    <span id="tb-what-is-weighted" class="tb-margin-right5" style="cursor:pointer" data-tbtooltip='<span style=font-weight:500>Search Traffic:</span><br> Tags will be sorted by the number of views this video has gained, directly attributed to people searching for this tag in YouTube search.<br><Br>If a tag has gotten you views, it will have an icon showing you how many like this: <span class="tb-suggested-tags-plugin-tag-score-container-loading" style="background-color: white; padding: 1px 4px; border-radius: 3px 3px 0 0; border-bottom: 2px solid #999; font-size: 10px; color:black"><img src="https://www.tubebuddy.com/images/icons/eye.png" style="height:10px; position:relative; top:2px; margin-right:2px;">4</span>. If not, nothing will show up next to the tag. </span>'>
+                        <i class="material-icons tb-font-size12">help_outline</i>
+                    </span>
+                </span>
+            </div>
+        </div>
+
+    </div>
+    <!-- LOADING -->
+    <div class="tb-suggested-tags-loading tb-margin-left10 tb-margin-top15 tb-margin-bottom15" style="max-height:50px;">
+        <div class="tb-spinner"></div><span class="tb-margin-left4" style="font-weight:normal; color:#777;">Loading Tags...</span>
+    </div>
+    <!--RECOMMENDED/SUGGESTED TAGS CONTAINER-->
+    <div class="tb-suggested-tags-results-container tb-suggested-tags-row3" style="display: none;">
+        <!-- RESULTS -->
+        <div class="tb-suggested-tags-plugin-results-container">
+            <!-- BASIC -->
+            <div class="tb-suggested-tags-results-basic">
+                <div class="tb-suggested-tags-results"></div>
+                <!---- RECOMMENDED TAGS UPGRADE ---->
+                <div class="tb-suggested-tags-upgrade" style="display:none">
+                    <div class="tb-suggested-tags-upgrade-text">
+                        <img src="{PLUGIN_FILE_ROOT}/images/icons/lock.png" style="position:relative; top:3px;" /> Only <span class="tb-suggested-tags-upgrade-shown"></span> of <span class="tb-suggested-tags-upgrade-total"></span> total tags are shown.
+                        <br />Upgrade your license to view (and sort) them all.
+                        <br /> <a style="cursor:pointer; font-weight:500; padding:2px 0 5px" class="tb-suggested-tags-upgrade-upgrade-link"> UPGRADE NOW! </a>
+                    </div> <img class="tb-suggested-tags-upgrade-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tb-suggested-tags-results-empty" style="max-height:200px; overflow-y:auto; overflow-x:hidden; margin-left:10px; margin-top:5px;display:none;">
+        <div class="tb-padding-top30 tb-padding-bottom30 tb-padding-left30" style="text-align: left;">
+            <div style="color:#999;" class="tb-padding-left20 tb-font-size13">Add title or tags to your video for recommendations</div>
+        </div>
+    </div>
+</div>
+<script type="text/template" id="tb-suggested-tags-plugin-tag-score-template">
+    <span class="tb-suggested-tags-plugin-tag-score-container" style="border-color:{1}" title="Tag Score"><span class="tb-suggested-tags-plugin-tag-score-text" data-score="{0}">{0}</span></span>
+</script>
+<script type="text/template" id="tb-suggested-tags-plugin-tag-score-template-empty">
+    <span class="tb-suggested-tags-plugin-tag-score-container-empty"><span class="tb-suggested-tags-plugin-tag-score-text-empty" title="Get tag score"><i class="small material-icons">search<i /></span></span>
+</script>
+
+<!--TAG TEMPLATE-->
+<script type="text/template" id="tb-suggested-tags-tag-template">
+    <div class='tb-suggested-tag {1}' data-view-score="{8}" data-disabled='false' data-tag='{9}' data-tag-type="{6}" title="YouTube auto suggested searches and video search rank for this tag">
+        <img title='add tag' class='tb-suggested-tag-image' src="{2}" />
+        <span class='tb-suggested-tag-text'>{0}</span>
+        <img style='{7}' src='{PLUGIN_FILE_ROOT}/images/icons/error.png' class='tb-suggested-tag-demonetization' title='tag may cause demonetization' />
+        <span class='tb-suggested-tags-plugin-tag-score-container-loading' style="background-color: white; padding: 1px 4px; height:17px; display:inline-block !important; border-bottom: 2px solid #424242; font-size: 10px; display:#EYE#"><img src="{PLUGIN_FILE_ROOT}/images/icons/eye.png" class="tb-suggested-tags-eye" style="height:10px; position:relative; top:2px; margin-right:2px;" />{3}</span>
+    </div>
+</script>
+

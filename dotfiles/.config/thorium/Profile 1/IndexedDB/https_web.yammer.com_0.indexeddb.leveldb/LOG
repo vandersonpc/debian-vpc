@@ -1,0 +1,6 @@
+2023/11/14-11:11:25.017 d936 Creating DB /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_web.yammer.com_0.indexeddb.leveldb since it was missing.
+2023/11/14-11:11:25.046 d936 Reusing MANIFEST /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_web.yammer.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/14-11:11:28.878 d93a Level-0 table #5: started
+2023/11/14-11:11:28.887 d93a Level-0 table #5: 550 bytes OK
+2023/11/14-11:11:28.898 d93a Delete type=0 #3
+2023/11/14-11:11:28.899 d936 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

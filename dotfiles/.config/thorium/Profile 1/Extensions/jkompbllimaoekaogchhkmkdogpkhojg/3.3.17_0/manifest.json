@@ -1,0 +1,43 @@
+{
+   "action": {
+      "default_icon": {
+         "19": "img/on38.png",
+         "24": "img/on38.png",
+         "32": "img/on38.png"
+      },
+      "default_popup": "html/popup.html"
+   },
+   "background": {
+      "service_worker": "sw_background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "/css/style.css" ],
+      "js": [ "/lib/jquery-3.6.0.min.js", "/js/content-script-0.js" ],
+      "matches": [ "*://*.amazon.com/*", "*://*.amazon.co.uk/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "/js/content-script-1.js" ],
+      "matches": [ "*://*.amazon.com/*", "*://*.amazon.co.uk/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": {
+   },
+   "description": "",
+   "host_permissions": [ "*://*.amazon.com/*", "*://*.amazon.co.uk/*" ],
+   "icons": {
+      "128": "img/icon128.png",
+      "19": "img/on38.png",
+      "38": "img/on38.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAko4rW403eAjDikH7Ppr0xc1A+rwIutI/0oDg8OVa5habvCPqN1psh3FUWfZH+5KCb8C2FOQ6IO13nTMczEfzM6X/PjgzeWrP79dmFVH8RRYZuMxS6r6j9+T3jpZhC9HWRy3xW9+/6oAc7LiGcjtIOtUl3USO4d0p1/YGvmDR2JefH/WSec2Qkxn1YnoK8egAzhYdwuPV/Bn3kWzZYA3cZCaJhxhsiaZaycDF0GI5IcIT6PHay9/rQqtiLnpF612luzClrexqU/5QsK1hkwaIWKtAUpbwor/MBsQkLjI+FyjtmL5xhDT2Bly4wP5ST/BP5wTUr80VMbl6pZ43P4NaKwIDAQAB",
+   "manifest_version": 3,
+   "name": "DS Amazon Quick View",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.3.17",
+   "web_accessible_resources": [ {
+      "matches": [ "*://www.amazon.com/*" ],
+      "resources": [ "/img/*" ]
+   } ]
+}

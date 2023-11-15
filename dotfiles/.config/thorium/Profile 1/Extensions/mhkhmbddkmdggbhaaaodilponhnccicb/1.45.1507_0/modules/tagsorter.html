@@ -1,0 +1,56 @@
+<!--Start Base Module Template-->
+<div id="tb-tag-sorter-container" class="tb-module-template draggable-container tb-tag-sorter-modal" style="display:none; width:750px">
+    <!--Start Base Module Shadow-->
+    <div class="tb-module-shadow">
+        <!--Start BASE Module Header-->
+        <div class="tb-module-header" data-draggable="true">
+            <img class="tb-module-logo " src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon.svg" alt="tb-logo" data-draggable="false" />
+            <h1 class="tb-module-title">Tag Sorter</h1>
+            <div class="tb-module-help">
+                <a style="vertical-align: middle;text-decoration: none;" target="_blank" href="https://www.tubebuddy.com/tools?tool=tagsorter" data-draggable="false">
+                    <i class="small material-icons tb-icon-white tb-icon-help">help_outline</i>
+                </a>
+            </div>
+            <div class="tb-module-close" data-draggable="false">
+                <i class="medium material-icons tb-icon-white" data-draggable="false">close</i>
+            </div>
+        </div>
+        <!--End Base Module Header-->
+        <div class="tb-module-container">
+            <!--Start Base Module Container-->
+            <div class="tb-module-content">
+                <div class="tb-center tb-font-size-sm tb-font-cbold tb-margin-top-20">
+                    Drag &amp; drop Tags in any order you'd like.
+                </div>
+                <div class="tb-tag-sorter-settings-container">
+                    <!-- Tags list -->
+                    <ul id="tb-tag-sorter-list" class="tb-sortable tb-margin-bottom-20 grid"></ul>
+
+                    <div class="tb-center" style="display:none;">
+                        <span class="tb-font-size-xs tb-font-cbold">
+                            (Current Position | Original Position)
+                        </span>
+                    </div>
+                    <div class="tb-center tb-padding-bottom-5">
+                        <a class="tb-sorter-remove-duplicates tb-btn tb-btn-sm tb-btn-danger">
+                            Remove Duplicates
+                        </a>
+                        <a class="tb-sorter-auto-sort tb-btn tb-btn-sm tb-btn-primary tb-tag-sorter-auto-sort">
+                            Auto-Sort by Rank
+                        </a>
+                    </div>
+                </div>
+                <!-- Apply button -->
+                <div class="tb-float-right">
+                    <a class="tb-btn tb-btn-sm tb-btn-success tb-tag-sorter-apply">
+                        Apply &amp; Close
+                    </a>
+                </div>
+            </div>
+            <!--End BASE Module Container-->
+        </div>
+        <!--End BASE Footer-->
+    </div>
+    <!--End BASE Shadow-->
+</div>
+<!--End BASE Module Template-->

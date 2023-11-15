@@ -1,0 +1,1 @@
+import{b,y as n}from"./index-f8bdaf1e.js";const o="_button_dvluu_1",_="_button_big_dvluu_19",l="_button_fullWidth_dvluu_44",t={button:o,button_big:_,button_fullWidth:l},i={button:t.button,button_fullWidth:t.button_fullWidth,button_big:t.button_big};function e(u){return b.jsx(n,{...u,styles:i})}export{e};

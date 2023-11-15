@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KDP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link href="css/pop-up-sign-in.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="beforelogin">
+        <div><img src="kdp.png" alt="kdp" /></div>
+        <div class="btndiv">
+          <h3 style="color: #ca9f3e">Off &nbsp;</h3>
+          <input id="extension_status" class="toggle-round" type="checkbox" />
+          <label for="extension_status"></label>
+          <h3 style="color: #ca9f3e">&nbsp; On</h3>
+        </div>
+        <div class="logdiv">
+          <a
+            style="text-decoration: none;"
+            class="login"
+            href="https://www.selfpublishingtitans.com/auth/login"
+            target="_blank"
+            ><p class="logtext">Log in</p>
+          </a>
+        </div>
+
+        <div class="account">
+          <div>
+            <p class="wrongpass">Incorrect email or password</p>
+          </div>
+          <div class="loader"></div>
+
+          <a href="https://www.selfpublishingtitans.com/auth/forgot" target="_blank"><p class="ftext">Forgot Password?</p></a>
+
+          <hr class="line" />
+          <p class="actext">Don't have an account?</p>
+
+          <div class="logdiv">
+            <button class="login">
+              <a href="https://www.selfpublishingtitans.com/auth/register" target="_blank" style="text-decoration: none; color: white">Create New Account</a>
+            </button>
+
+            <hr class="line" />
+            <p class="actext">Need Help/Support? Email me or Facebook DM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="js/popup-sign-in-script.js"></script>
+  </body>
+</html>

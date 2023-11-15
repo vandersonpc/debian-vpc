@@ -1,0 +1,26 @@
+{
+   "action": {
+      "default_icon": {
+         "48": "icons/icon48.png"
+      },
+      "default_popup": "search/search.html"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "description": "Search your ChatGPT conversation history",
+   "host_permissions": [ "https://chat.openai.com/*" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAom+QxubTStAuuxbRAYicQHCyZgLhj7YFtPFPbP9MfX5odZSKxvL4sfGjlUqo6uJda7ia1xMeKsq5nyHDaVXhhpPPevEBjX1yuuobjrMJlXGgsVb1iOGEjlrVnul0DY1jmg2syxy1+sVLBFBq0CWsHlrIJk/rtbtlXKQNec2fGZilbPOdqdI9rLdlm3CgSAUSyiJdyRyzNh3HqryxWvmLshYgW+iEP+LPlfBlML8pMDGOtQhwVh/oQdUjaDuNTOV7mBtLQ78EStHPtfpH8NolaQRqsOej729qWdgqYSeaIU9hgitnKXRhYaCRNRgI6aFL0orQ1C7bxn/o2ruSnVE/RwIDAQAB",
+   "manifest_version": 3,
+   "name": "ChatGPT Conversation History Search",
+   "permissions": [ "activeTab", "webRequest", "storage", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.5"
+}

@@ -1,0 +1,19 @@
+2023/11/14-12:09:01.572 ecce Reusing MANIFEST /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/14-12:09:01.573 ecce Recovering log #9
+2023/11/14-12:09:01.573 ecce Reusing old log /home/vanderson/.config/thorium/Profile 1/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/000009.log 
+2023/11/14-12:09:02.486 ecce Compacting 1@1 + 1@2 files
+2023/11/14-12:09:02.602 ecce Generated table #12@1: 9678 keys, 1880951 bytes
+2023/11/14-12:09:02.603 ecce Compacted 1@1 + 1@2 files => 1880951 bytes
+2023/11/14-12:09:02.621 ecce compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/11/14-12:09:02.621 ecce Delete type=2 #8
+2023/11/14-12:09:02.621 ecce Delete type=2 #10
+2023/11/14-12:09:52.189 ecd1 Level-0 table #14: started
+2023/11/14-12:09:52.203 ecd1 Level-0 table #14: 129953 bytes OK
+2023/11/14-12:09:52.222 ecd1 Delete type=0 #9
+2023/11/14-12:09:52.223 ecce Manual compaction at level-0 from '\x00;\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00<\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/11/14-12:40:07.305 eccf Compacting 1@1 + 1@2 files
+2023/11/14-12:40:07.390 eccf Generated table #15@1: 9789 keys, 1892610 bytes
+2023/11/14-12:40:07.390 eccf Compacted 1@1 + 1@2 files => 1892610 bytes
+2023/11/14-12:40:07.413 eccf compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/11/14-12:40:07.413 eccf Delete type=2 #14
+2023/11/14-12:40:07.413 eccf Delete type=2 #12

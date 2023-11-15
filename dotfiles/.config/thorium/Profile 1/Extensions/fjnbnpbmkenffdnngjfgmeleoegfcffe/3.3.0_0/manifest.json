@@ -1,0 +1,39 @@
+{
+   "action": {
+      "default_popup": "",
+      "default_title": "Stylish"
+   },
+   "background": {
+      "service_worker": "./static/js/service-worker.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "css": [  ],
+      "js": [ "./static/js/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "externally_connectable": {
+      "matches": [ "https://*.userstyles.org/*", "*://localhost/*" ]
+   },
+   "homepage_url": "https://userstyles.org",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "/icons/logo/black-icon-128.png",
+      "16": "/icons/logo/black-icon-128.png",
+      "48": "/icons/logo/black-icon-128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr3yiiN7TIDoaEvh7W34g5YsxfUIGkvVUylq9bm29v8EzULCNIpi74KOBrvprYB6/YAdLjvYmGya1CJfgkuQy3/rZ7gGLSrDk9B1qgsHurhNaCJ0ogfSR50bfYUp0qJlIAgBgZWrVWLogfXbU8x+LFgV8pdMjFuWJgzketxjP6nwIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "options_page": "pages/options/options.html",
+   "permissions": [ "storage", "tabs", "alarms", "scripting", "webNavigation", "webRequest", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.3.0",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "index.html", "js/dynamic-bundles/tower-blocks.js", "js/dynamic-bundles/coca-google-style.js", "js/dynamic-bundles/google-style.js", "js/dynamic-bundles/google-fingers-style.js" ]
+   } ]
+}

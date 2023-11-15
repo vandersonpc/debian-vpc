@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loader</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <style>
+      .container {
+        font-family: "Montserrat";
+        position: relative;
+        width: 64vh;
+        height: 97vh;
+        background: #ffffff;
+        box-shadow: 0px 0px 62.7411px rgb(0 0 0 / 6%);
+        border-radius: 20.9137px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+      }
+      .loader {
+        left: 41%;
+        top: 53%;
+        position: absolute;
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 2s linear infinite;
+        display: none;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .hide-loader {
+        display: none;
+      }
+      .logdiv {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <img src="kdp.png" alt="kdp" />
+        
+        <div class="loader"></div>
+        
+    </form>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="js/loader.js"></script>
+  </body>
+</html>

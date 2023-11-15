@@ -1,0 +1,34 @@
+{
+   "background": {
+      "service_worker": "scripts/background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "bower_components/jquery/dist/jquery.min.js", "bower_components/js-xlsx/dist/xlsx.full.min.js", "bower_components/js-md5/build/md5.min.js", "scripts/utils.js", "scripts/contentscript.js" ],
+      "matches": [ "*://*.amazon.com/*", "*://*.amazon.ca/*", "*://*.amazon.co.uk/*", "*://*.amazon.de/*", "*://*.amazon.fr/*", "*://*.amazon.it/*", "*://*.amazon.es/*", "*://*.amazon.com.mx/*", "*://*.amazon.com.au/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDescription__",
+   "host_permissions": [ "*://*.amazon.com/", "*://*.amazon.ca/", "*://*.amazon.co.uk/", "*://*.amazon.de/", "*://*.amazon.fr/", "*://*.amazon.it/", "*://*.amazon.es/", "*://*.amazon.com.mx/", "*://*.amazon.com.au/", "https://raybeksolutions.com/" ],
+   "icons": {
+      "128": "images/icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhdYbDNEPvZaEN/eEy3Kl0Iq/hKXhsx1SSC8nFe52R6xeLlWMURXB2gCDtP6hARwlKlhaD+zdEN4P6jaN9PkZC3ATQvFwxda9ttSuy3yT097HyJ4IKPeejSWbw7eheiM6hUqGWUZ/r+9504/5dAjFwTtX3g9bIOETsewO0FIIivn4h3jXF1XzgnWqZHRpzmidI37v3hEMw7lqltz5sMfTCs7CCu6mqZDQ8xgihFWKEuuriIwwD0Tw941s8Pug9hXtZY8JvWKrjRpW5oUTt3CWju6fRfuZVEDHx5hfPpZUVqEqnxEc9wpxV/EpBV1CMmqRhhkLwLIMKe7wy/gySrNJxQIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_appName__",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.45",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*/*" ],
+      "resources": [ "images/*.png" ]
+   } ]
+}

@@ -1,0 +1,16 @@
+2023-11-13 17:19:02.015 [info] Getting Manifest... mcu-debug.memory-view
+2023-11-13 17:19:02.163 [info] Installing extension: mcu-debug.memory-view
+2023-11-13 17:19:02.819 [info] Getting Manifest... mcu-debug.debug-tracker-vscode
+2023-11-13 17:19:05.479 [info] Extension signature is verified: mcu-debug.memory-view
+2023-11-13 17:19:05.609 [info] Extracted extension to file:///home/vanderson/.vscode/extensions/mcu-debug.memory-view-0.0.25: mcu-debug.memory-view
+2023-11-13 17:19:05.625 [info] Renamed to /home/vanderson/.vscode/extensions/mcu-debug.memory-view-0.0.25
+2023-11-13 17:19:05.628 [info] Extracting extension completed. mcu-debug.memory-view
+2023-11-13 17:19:05.654 [info] Extension installed successfully: mcu-debug.memory-view
+2023-11-13 17:19:05.661 [info] Marked extension as uninstalled mcu-debug.memory-view-0.0.24
+2023-11-13 17:19:05.675 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/vanderson/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/vanderson/.vscode/extensions/extensions.json.vsctmp'
+    at r.create (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30053)
+    at a (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30167)
+    at s.fb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36175)
+    at s.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:28621)
+    at async E.stat (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:15732)
+    at async X.tb (/usr/share/code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:109:9535)

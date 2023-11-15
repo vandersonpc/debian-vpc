@@ -1,0 +1,1010 @@
+<div style="display:none">
+
+    <div class="advanced-text-input tb-advanced-text-input-playlist">
+        <label class="yt-uix-form-label advanced-search-label" id="advanced-search-id-label">
+            <img class="tb-height11" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg"
+                 style="margin-right: 2px; position:relative; top:2px;"> Playlist
+        </label>
+        <span class="yt-uix-form-input-container yt-uix-form-input-text-container ">
+            <span class="tb-videoslist-playlists-select-loading">
+                <img src="{PLUGIN_FILE_ROOT}/images/general/loading1.gif" style="position:relative; top:3px;"/> Loading...
+            </span>
+            <img src="{PLUGIN_FILE_ROOT}/images/general/loading1.gif" class="tb-videoslist-playlist-loading"
+                 style="display:none; position: absolute;z-index: 9999;left: 8px;top: 50px;"/>
+            <select class="tb-videoslist-playlists-select yt-uix-form-input-text" style="width:489px; display:none;">
+                <option value="select">Select</option>
+            </select>
+            <div class="tb-videoslist-edit-added-playlist"
+                 style="font-size:11px; color:green; padding:3px 0 0 3px; display:none;">
+                Video Id's from the playlast have been set below. You will still need to click the 'Search' button.
+            </div>
+        </span>
+
+    </div>
+    <a class="yt-uix-button yt-uix-button-default yt-uix-button-size-default tb-backup-backup-button"
+       style="margin-left:6px; display:none;">
+        <span class="yt-uix-button-content" style="vertical-align: middle;">
+            <img class="tb-height11" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg"
+                 style="margin-right: 2px; vertical-align: text-bottom;">
+            Backup
+        </span>
+    </a>
+    <span class="tb-studio-videos-list-dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 587.76 472" id="tb-icon-transparent"
+             style="position: relative; left: 6px; top: -2px;">
+            <path class="a"
+                  d="M353,383.06l144.7-86.14L370.52,225V120.44S512.28,91.58,571.25,225s-56.88,212.44-83.64,226.66-108.73,37.63-174,0S220.8,358,220.8,296.92V0H353V383.06"/>
+            <path class="a" d="M69.42,0H200.73V465.86H69.42V225H0V120.44H69.42V0"/>
+        </svg>
+        <i class="material-icons tb-studio-videos-menu-carat tb-move-down3">expand_more</i>
+    </span>
+    <div style="background-color: white; border: solid 1px #ddd; position:absolute; z-index:9999990 !important; width: 230px; margin-left:-60px; margin-top:30px; right:10px; top:10px; "
+         class="yt-dialog-fg tb-videos-bulk-dropdown-template tb-hid">
+
+        <div class="tb-search-ranking-settings-container">
+            <table style="width:100%;">
+                <tr>
+                    <td style="width:380px;   border-left:solid 1px #ddd;" valign="top">
+                        <div style="padding:15px 15px 0 15px;">
+                            <div style="width:220px; display:inline-block">
+                                <div class="tb-videos-list-category-container">
+                                    <div class="tb-video-list-bulk-header">
+                                        Metadata Updates
+                                    </div>
+                                    <div style="padding:8px 4px 4px 7px; position:relative;"
+                                         class="tb-bulk-menu-item tb-video-list-dropdown-find-and-replace">
+                                        <a id="tb-find-replace-menu-item" data-id="{0}" data-title="{1}"
+                                           data-thumbnail="{2}"
+                                           class="tb-videos-list-tool tb-margin-top5 tb-margin-left5 tb-margin-right5 tb-margin-bottom5">
+                                            <span class="yt-uix-button-menu-item">Find / Replace / Append</span>
+                                        </a>
+                                    </div>
+                                    <div style="padding:4px 4px 4px 7px; position:relative;"
+                                         class="tb-bulk-menu-item tb-video-list-dropdown-bulk-thumbnail">
+                                        <a data-id="{0}" data-title="{1}" data-thumbnail="{2}"
+                                           class="tb-videos-list-tool tb-margin-top5 tb-margin-left5 tb-margin-right5 tb-margin-bottom5">
+                                            <span class="yt-uix-button-menu-item">Thumbnail Overlays</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="tb-videos-list-category-container">
+                                    <div class="tb-video-list-bulk-header">
+                                        Cards <span class="tb-videos-list-card-count"></span>
+                                    </div>
+                                    <div style="padding-top:7px; padding-bottom:10px;">
+
+                                        <span style="padding:4px 9px 4px 7px; margin-right:0px; position:relative;"
+                                              class="tb-bulk-menu-item tb-video-list-dropdown-bulkcopy-cards">
+                                            <a class="tb-videos-list-tool tb-margin-top5 tb-margin-left5 tb-margin-right5 tb-margin-bottom5"
+                                               data-id="{0}" data-title="{1}" data-thumbnail="{2}">
+                                                <span class="yt-uix-button-menu-item">Copy</span>
+                                            </a>
+                                        </span>
+                                        <span style="padding:4px 9px 4px 7px; margin-right:0px; position:relative;"
+                                              class="tb-bulk-menu-item tb-video-list-cards-update">
+                                            <a class="tb-videos-list-tool" data-id="{0}" data-title="{1}"
+                                               data-thumbnail="{2}">
+                                                <span class="yt-uix-button-menu-item">Update</span>
+                                            </a>
+                                        </span>
+                                        <span style="padding:4px 9px 4px 7px; margin-right:0px; position:relative;"
+                                              class="tb-bulk-menu-item tb-video-list-dropdown-delete-cards">
+                                            <a class="tb-videos-list-tool" data-id="{0}" data-title="{1}"
+                                               data-thumbnail="{2}">
+                                                <span class="yt-uix-button-menu-item">Delete</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tb-videos-list-category-container">
+                                    <div class="tb-video-list-bulk-header">
+                                        End Screens <span class="tb-videos-list-card-count"></span>
+                                    </div>
+                                    <div style="padding-top:7px; padding-bottom:10px;">
+                                        <span style="padding:4px 9px 4px 7px; margin-right:0px; position:relative;"
+                                              class="tb-bulk-menu-item tb-video-list-dropdown-bulkcopy-endscreens">
+                                            <a class="tb-videos-list-tool  tb-margin-top5 tb-margin-left5 tb-margin-right5 tb-margin-bottom5"
+                                               data-id="{0}" data-title="{1}" data-thumbnail="{2}">
+                                                <span class="yt-uix-button-menu-item">Copy</span>
+
+                                            </a>
+                                        </span>
+                                        <span style="padding:4px 9px 4px 7px; margin-right:0px; position:relative;"
+                                              class="tb-bulk-menu-item tb-video-list-dropdown-bulkupdate-endscreens">
+                                            <a class="tb-videos-list-tool  tb-margin-top5 tb-margin-left5 tb-margin-right5 tb-margin-bottom5"
+                                               data-id="{0}" data-title="{1}" data-thumbnail="{2}">
+                                                <span class="yt-uix-button-menu-item">Update</span>
+                                            </a>
+                                        </span>
+                                        <span style="padding:4px 9px 4px 7px; margin-right:0px;position:relative;"
+                                              class="tb-bulk-menu-item tb-video-list-dropdown-bulkdelete-endscreens">
+                                            <a class="tb-videos-list-tool  tb-margin-top5 tb-margin-left5 tb-margin-right5 tb-margin-bottom5"
+                                               data-id="{0}" data-title="{1}" data-thumbnail="{2}">
+                                                <span class="yt-uix-button-menu-item">Delete</span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+
+
+                                <div class="tb-videos-list-category-container">
+                                    <div class="tb-video-list-bulk-header">
+                                        Data
+                                    </div>
+
+                                    <div style="padding:8px 4px 4px 7px; position:relative;"
+                                         class="tb-bulk-menu-item tb-bulk-menu-item-demonetization-double-check">
+                                        <a class="tb-videos-list-tool" data-id="{0}" data-title="{1}"
+                                           data-thumbnail="{2}">
+                                            <span class="yt-uix-button-menu-item">Demonetization Double-Check</span>
+                                        </a>
+                                    </div>
+
+                                    <div style="padding:8px 4px 4px 7px; position:relative;"
+                                         class="tb-bulk-menu-item tb-backup-backup-button">
+                                        <a class="tb-videos-list-tool" data-id="{0}" data-title="{1}"
+                                           data-thumbnail="{2}">
+                                            <span class="yt-uix-button-menu-item">Backup Video Metadata</span>
+                                        </a>
+                                    </div>
+
+                                    <div style="padding:8px 4px 4px 7px; position:relative;"
+                                         class="tb-bulk-menu-item tb-bulk-menu-item-annotation-audit">
+                                        <a class="tb-videos-list-tool" data-id="{0}" data-title="{1}"
+                                           data-thumbnail="{2}">
+                                            <span class="yt-uix-button-menu-item">Annotation Audit</span>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div style="clear:both"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <span class="tb-videos-bulk-list-dropdown">
+        <button id="tb-bulk-menu" aria-haspopup="true" aria-expanded="false" type="button"
+                class="yt-uix-button yt-uix-button-default yt-uix-button-size-default yt-uix-button-empty start tb-button-default"
+                style="margin-right:6px; margin-top:6px; padding:8px 8px 6px 8px; cursor:pointer;">
+            <img class="tb-height11" src="{PLUGIN_FILE_ROOT}/images/branding/tb-icon-transparent.svg"
+                 style="position:relative; top:1px; left:-1px;"/>
+            Bulk
+            <span class="yt-uix-button-arrow yt-sprite" style="position:relative; left:2px;"></span>
+        </button>
+    </span>
+    <div style="position:fixed; z-index:9999; width: 238px; padding: 15px 20px; display:none; background:white;"
+         class="tb-videos-list-all-tools-dropdown tb-bulk-tools-menu yt-dialog-fg">
+
+        <div class="tb-videos-list-tab-container">
+
+
+            <div class="tb-videos-list-category-container" style="width:250px;">
+                <div class="tb-videoslist-section-header">
+                    Bulk Video Processing
+                </div>
+                <div>
+                    <a class="tb-videos-list-tool">
+                        <span class="tb-video-list-dropdown-find-and-replace">
+                            Find &amp; Replace Text
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:6px;">
+                    <a class="tb-videos-list-tool">
+                        <span class="tb-video-list-dropdown-bulk-thumbnail">
+                            Thumbnail Overlays
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:16px; display: none;"  class="tb-bulk-misc-bulk-tools">
+                    <div id="tb-bulk-cards-section" class="tb-videoslist-section-header">
+                        Bulk Cards
+                    </div>
+                    <a class="tb-videos-list-tool ">
+                        
+                        <span class="tb-video-list-dropdown-bulkcopy-cards">
+                            Copy
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:6px; display: none;" class="tb-bulk-misc-bulk-tools">
+                    <a class="tb-videos-list-tool">
+                        
+                        <span class="tb-video-list-cards-update">
+                            Update
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:6px; display: none;" class="tb-bulk-misc-bulk-tools">
+                    <a class="tb-videos-list-tool">
+                        
+                        <span class="tb-video-list-dropdown-delete-cards">
+                            Delete
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:16px; display: none; " class="tb-bulk-misc-bulk-tools">
+                    <div id="tb-bulk-end-screens-section" class="tb-videoslist-section-header">
+                        Bulk End Screens
+                    </div>
+                    <a class="tb-videos-list-tool">
+                        
+                        <span class="tb-video-list-dropdown-bulkcopy-endscreens">
+                            Copy
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:6px; display: none;" class="tb-bulk-misc-bulk-tools">
+                    <a class="tb-videos-list-tool">
+                        <span class="tb-video-list-dropdown-bulkupdate-endscreens">
+                            Update
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:6px; display: none;" class="tb-bulk-misc-bulk-tools">
+                    <a class="tb-videos-list-tool">
+                        
+                        <span class="tb-video-list-dropdown-bulkdelete-endscreens">
+                            Delete
+                        </span>
+                    </a>
+                </div>
+
+                <div class="tb-videoslist-section-header">
+                    Misc Tools
+                </div>
+                <div style="margin-top:8px;">
+                    <a class="tb-videos-list-tool">
+                        <span class="tb-bulk-menu-item-kids-center">
+                            COPPA Center
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:8px; display: none">
+                    <a class="tb-videos-list-tool">
+                        <span class="tb-bulk-menu-item-shorts">
+                            Shorts Permission Opt-out
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:8px;">
+                    <a class="tb-videos-list-tool">
+                        <span class="tb-bulk-menu-item-demonetization-double-check">
+                            Demonetization Double-Check
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:8px;">
+                    <a class="tb-videos-list-tool">
+                        <span class="tb-backup-backup-button">
+                            Channel Backup
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:8px;">
+                    <a class="tb-videos-list-tool">
+                        <span class="tb-schedule-button">
+                            View Schedule
+                        </span>
+                    </a>
+                </div>
+                <div style="margin-top:8px;">
+                    <a class="tb-videos-list-tool">
+                        <span class="tb-bulk-menu-item-ctr">
+                            Click Magnet
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <span class="tb-videos-list-all-tools"
+          style="position:relative; cursor:pointer; top:5px; left:15px; margin-right:20px; color:#555;">
+
+        <img src="{PLUGIN_FILE_ROOT}/images/branding/icon_medium.png"
+             style="position:relative; top:4px; left:-1px; margin-right:3px; height:22px; border-radius:50%;"/>
+        <span style="font-weight:600; font-size:15px;" class="tb-videos-list-all-tools-toggle">
+            Bulk &amp; Misc Tools <i class="material-icons tb-studio-videos-menu-carat"
+                                     style="position:relative; top:7px; left:-1px;">expand_more</i>
+        </span>
+    </span>
+
+    <div class="tb-videos-bulk-list-section" style="border-bottom:solid 1px rgba(0,0,0,.12); height:40px;">
+        <img src="{PLUGIN_FILE_ROOT}/images/branding/icon_medium.png"
+             style="position:relative; top:-0px; left:-1px; height:40px; position:absolute;"/>
+        <div style="padding-left:80px; line-height:14px;">
+            <div style="display:inline-block;">
+                <div style="font-weight:500; padding: 4px 0 3px; font-size:1.1em;">Bulk Meta Actions</div>
+                <a class="tb-video-list-dropdown-find-and-replace">Titles &amp; Desc.</a>
+                <span style="font-size:1.4em; color:#ddd; padding-left:4px; padding-right:4px;">|</span>
+                <a class="tb-video-list-dropdown-bulk-thumbnail">Thumbnails</a>
+            </div>
+            <div style="display:inline-block; padding-left:40px;">
+                <div style="font-weight:500; padding: 4px 0 3px; font-size:1.1em;">Bulk Card Actions</div>
+                <a class="tb-video-list-dropdown-bulkcopy-cards">Copy</a>
+                <span style="font-size:1.4em; color:#ddd; padding-left:4px; padding-right:4px;">|</span>
+                <a class="tb-video-list-cards-update">Update</a>
+                <span style="font-size:1.4em; color:#ddd; padding-left:4px; padding-right:4px;">|</span>
+                <a class="tb-bulk-menu-item tb-video-list-dropdown-delete-cards">Delete</a>
+            </div>
+            <div style="display:inline-block; padding-left:40px;">
+                <div style="font-weight:500; padding: 4px 0 3px; font-size:1.1em;">Bulk End Screen Actions</div>
+                <a class="tb-video-list-dropdown-bulkcopy-endscreens">Copy</a>
+                <span style="font-size:1.4em; color:#ddd; padding-left:4px; padding-right:4px;">|</span>
+                <a class="tb-video-list-dropdown-bulkupdate-endscreens">Update</a>
+                <span style="font-size:1.4em; color:#ddd; padding-left:4px; padding-right:4px;">|</span>
+                <a class="tb-video-list-dropdown-bulkdelete-endscreens">Delete</a>
+            </div>
+            <div style="display:inline-block; padding-left:40px; position:relative;">
+                <div style="font-weight:500; padding: 4px 0 3px; font-size:1.1em;">Misc Tools</div>
+                <div id="tb-bulk-menu-item-ctr-container"
+                     style="display:none; position:absolute; top:-20px; left:40px;">
+                    <a class="tb-bulk-menu-item-ctr">Click Magnet</a>
+                </div>
+                <a class="tb-bulk-menu-item-kids-center">COPPA Center</a>
+                <span style="font-size:1.4em; color:#ddd; padding-left:4px; padding-right:4px;">|</span>
+                <a class="tb-bulk-menu-item-demonetization-double-check">Demon. Check</a>
+                <span style="font-size:1.4em; color:#ddd; padding-left:4px; padding-right:4px;">|</span>
+                <a class="tb-backup-backup-button">Backup</a>
+                <span style="font-size:1.4em; color:#ddd; padding-left:4px; padding-right:4px;">|</span>
+                <a class="yt-uix-button yt-uix-button-default yt-uix-button-size-default tb-schedule-button">
+                    Schedule
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div style="display:none" type="text/template" id="tb-videos-list-comment-template">
+    <div class="" style="margin-bottom: 15px; padding-right:4px; line-height:15px;">
+        <img src="{0}" style="height:30px; width:30px; float:left; margin-right:3px;"/>
+        <a style="font-size:14px;" href="{2}" target="_blank">{3}</a><br/>
+        <span style="font-size:12px; color:#aaa;">{1}</span>
+
+        <div style="clear:both"></div>
+        <div style="padding:3px; line-height:15px; color:#666;">
+            {4}
+        </div>
+    </div>
+</div>
+<div style="display:none" type="text/template" id="tb-videos-list-dropdown-template">
+    <div data-video-container-id="{0}" class="tb-video-list-studio-video-overview yt-dialog-fg ">
+        <div class="tb-search-ranking-settings-container">
+            <!-- start new layout -->
+            <div class="tb-videoslist-menu" style="margin-top:-14px;">
+                <ul class="tabs tb-videoslist-tabs">
+                    <li data-tab-id="tb-videoslist-tools-tab"
+                        class="tb-videoslist-tab-header tb-videoslist-col-5 epic-nav-item selected tb-selected tb-tab-ripple">
+                        <div class="tab-header-title tb-videoslist-tab-header-title">
+                            <div class="tb-font-size14">
+                                Tools
+                            </div>
+                        </div>
+                    </li>
+                    <li id="tb-videoslist-launchpad-tab-header" data-tab-id="tb-videoslist-launchpad-tab"
+                        class="tb-videoslist-tab-header tb-videoslist-col-5 epic-nav-item tb-tab-ripple" data-id="{0}">
+                        <div class="tab-header-title tb-videoslist-tab-header-title">
+                            <div class="tb-font-size14">
+                                Launch Pad
+                            </div>
+                        </div>
+                    </li>
+                    <li data-tab-id="tb-videoslist-quicklinks-tab"
+                        class="tb-videoslist-tab-header tb-videoslist-col-5 epic-nav-item tb-tab-ripple" data-id="{0}">
+                        <div class="tab-header-title tb-videoslist-tab-header-title">
+                            <div class="tb-font-size14">Quick Links</div>
+                        </div>
+                    </li>
+                    <li data-tab-id="tb-videoslist-info-tab"
+                        class="tb-videoslist-tab-header tb-videoslist-col-5 epic-nav-item tb-tab-ripple" data-id="{0}">
+                        <div class="tab-header-title tb-videoslist-tab-header-title">
+                            <div class="tb-font-size14">Info</div>
+                        </div>
+                    </li>
+                    <li data-tab-id="tb-videoslist-notes-tab"
+                        class="tb-videoslist-tab-header tb-videoslist-col-5 epic-nav-item tb-videoslist-tab-notes-tab tb-tab-ripple"
+                        data-id="{0}">
+                        <div class="tab-header-title tb-videoslist-tab-header-title">
+                            <div class="tb-font-size14">
+                                Notes
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="tb-videos-list-tab-contents">
+                    <div id="tb-videoslist-tools-tab" class="tb-videoslist-tab-container">
+                        <div>
+                            <div id="tb-cards-and-endscreen-tools-tab" class="tb-videos-list-category-container"
+                                 style="display: none">
+                                <div class="tb-videoslist-section-header">
+                                    Cards
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-copy-cards" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            Copy
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-apply-card-templates" data-id="{0}" data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool ">
+                                        <span class="yt-uix-button-content">
+                                            Apply Template
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="display: none" class="tb-videos-list-category-container tb-bulk-misc-bulk-tools">
+                                <div class="tb-videoslist-section-header">
+                                    End Screens
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-copy-endscreens" data-id="{0}" data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool ">
+                                        <span class="yt-uix-button-content">
+                                            Copy
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-apply-endscreen-templates" data-id="{0}" data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            Apply Template
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="tb-videos-list-category-container">
+                                <div class="tb-videoslist-section-header">
+                                    Syndicate
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-export-to-facebook" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            Publish to Facebook
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="tb-videos-list-category-container">
+                                <div class="tb-videoslist-section-header">
+                                    Video SEO
+                                </div>
+
+                                <div class="tb-video-list-menu-item-edit-open tb-video-menu-item tb-video-list-dropdown-seostudio"
+                                     data-id="{0}" data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool" data-edit-video-open="seostudio">
+                                        <span class="yt-uix-button-content">
+                                            SEO Studio
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="tb-video-menu-item tb-video-list-dropdown-transcriptions" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            Captions Service
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="tb-video-menu-item tb-video-list-dropdown-search-ranking" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool ">
+                                        <span class="yt-uix-button-content">
+                                            Search Positions
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="tb-video-list-menu-item-edit-open tb-video-menu-item tb-video-list-dropdown-suggested-tags"
+                                     data-id="{0}" data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool" data-edit-video-open="recommendedtags"
+                                       data-is-draft="{5}">
+                                        <span class="yt-uix-button-content">
+                                            Recommended Tags
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="tb-video-list-menu-item-edit-open tb-video-menu-item tb-video-list-dropdown-tag-translator"
+                                     data-id="{0}" data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool" data-edit-video-open="tagtranslator"
+                                       data-is-draft="{5}">
+                                        <span class="yt-uix-button-content">
+                                            Tag Translator
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-ab-test" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            A/B Test
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            </div>
+                        <div>
+                            <div class="tb-videos-list-category-container">
+                                <div class="tb-videoslist-section-header">
+                                    Promote
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-share-tracker" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            Share Tracker
+                                        </span>
+                                    </a>
+
+                                </div>
+
+
+                                <div class="tb-video-menu-item tb-video-list-dropdown-promote" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool ">
+                                        <span class="yt-uix-button-content">
+                                            Vid2Vid Promotion
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-twitter" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool ">
+                                        <span class="yt-uix-button-content">
+                                            Share on Twitter
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="tb-videos-list-category-container">
+                                <div class="tb-videoslist-section-header">
+                                    Schedule
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-golive-video" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool ">
+                                        <span class="yt-uix-button-content">
+                                            Scheduled Publish
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-sunset-video" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool ">
+                                        <span class="yt-uix-button-content">
+                                            Sunset Video
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-video-updated-video" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool ">
+                                        <span class="yt-uix-button-content">
+                                            Scheduled Video Update
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div class="tb-videos-list-category-container">
+                                <div class="tb-videoslist-section-header">
+                                    Misc
+                                </div>
+
+                                <div class="tb-video-menu-item tb-video-list-dropdown-suggested-shorts" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}" style="display: none;">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            Suggested Shorts <span id="subitem-highlight"
+                                                                   class="tb-badge-new">New</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="tb-video-menu-item tb-video-list-dropdown-thumbnail-analyzer" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-description="{3}" data-views="{4}"
+                                     data-is-draft="{5}" style="display: none;">
+                                    <a class="tb-videos-list-tool tb-thumbnail-analyzer-link">
+                                        <span class="yt-uix-button-content">
+                                            Thumbnail Analyzer<span id="subitem-highlight"
+                                                                    class="tb-beta-tag">BETA</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="tb-video-menu-item tb-video-list-dropdown-title-generator" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}" style="display:none;">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            Title Generator <span id="subitem-highlight" class="tb-badge-new">New</span>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="tb-video-menu-item tb-video-list-dropdown-thumbnail-creator" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-description="{3}" data-views="{4}"
+                                     data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool tb-thumbnail-generator-link">
+                                        <span class="yt-uix-button-content">
+                                            Thumbnail Generator
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <div class="tb-video-menu-item tb-video-list-dropdown-embed" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool ">
+                                        <span class="yt-uix-button-content">
+                                            Advanced Embed
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-pick-a-winner" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            Pick a Winner
+                                        </span>
+                                    </a>
+
+                                </div>
+                                <div class="tb-video-menu-item tb-video-list-dropdown-export-comments" data-id="{0}"
+                                     data-title="{1}" data-thumbnail="{2}" data-is-draft="{5}">
+                                    <a class="tb-videos-list-tool">
+                                        <span class="yt-uix-button-content">
+                                            Export Comments
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tb-videos-list-notes">
+                            <div class="tb-videoslist-section-header">
+                                Notes
+                            </div>
+
+                            <div class="tb-video-list-subitem tb-videos-list-golive">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i> Video is scheduled to
+                                    be Published on&nbsp; <span class="tb-videos-list-golive-date"></span>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-facebook">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>
+                                    Video was published to Facebook on&nbsp;<span
+                                        class="tb-videos-list-facebook-date"></span>
+                                    <a class="tb-videos-list-view-facebook" target="_blank">
+                                        view
+                                        <img src="{PLUGIN_FILE_ROOT}/images/icons/external.png"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-is-annotation-template">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>
+                                    Video is an&nbsp;<a href="https://www.tubebuddy.com/tools?tool=annotationtemplates" target="_blank">Annotation
+                                    Template</a>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-is-card-template">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>
+                                    Video is a&nbsp;<a href="https://www.tubebuddy.com/tools?tool=annotationtemplates" target="_blank">Card
+                                    Template</a>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-thumbnail-generated">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>
+                                    Last generated thumbnail&nbsp;<span
+                                        class="tb-videos-list-thumbnail-generated-date"></span>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-share-tracker-items">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>Video shared
+                                    on:&nbsp;<span class="tb-videos-list-share-tracker-items-list"></span>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-wentlive">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>
+                                    Video was published on&nbsp;<span class="tb-videos-list-wentlive-date"></span>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-sunset">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>
+                                    Video will be Sunsetted on&nbsp;<span class="tb-videos-list-sunset-date"></span>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-sunsetted">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>
+                                    Video was Sunsetted on&nbsp;<span class="tb-videos-list-sunsetted-date"></span>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-scheduledmetaupdate">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>
+                                    Video will be Updated on&nbsp;<span
+                                        class="tb-videos-list-scheduledmetaupdate-date"></span>
+                                </div>
+                            </div>
+                            <div class="tb-video-list-subitem tb-videos-list-scheduledmetaupdated">
+                                <div class="tb-video-list-subitem-container">
+                                    <i class="material-icons tb-notes-item-icon">check_circle</i>
+                                    Video was Updated on&nbsp;<span
+                                        class="tb-videos-list-scheduledmetaupdated-date"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tb-videoslist-quicklinks-tab"
+                         class="tb-videoslist-tab-container tb-margin-bottom20 tb-videos-list-pad-container"
+                         style="display:none;">
+
+                        <div style="padding:10px 0 0 5px; line-height:20px;"
+                             class="tb-layout-menu-links-list tb-width100-percent">
+                            <div style="line-height:17px; margin-bottom:6px; float:left">
+                                <img class="quick-link" src="{PLUGIN_FILE_ROOT}/images/icons/comments.png"
+                                     style="vertical-align: text-bottom; height:12px;"> <a target="new"
+                                                                                           href="https://studio.youtube.com/video/{0}/comments/inbox"
+                                                                                           class="tb-font-size-lb tb-font-cbold">Comments</a>
+                                <a target="new"
+                                   href="https://www.youtube.com/edit?o=U&video_id={0}&feature=vm&tab=monetization"
+                                   class="tb-videos-list-quick-link-header" style="display:none;">Monetization</a>
+                            </div>
+                            <!--<div style="line-height:17px; margin-bottom:6px; float:left">
+                                <select class="tb-videos-list-comment-filters tb-input-textfield" style="margin-left:16px; width:90px; margin-bottom:15px; font-size:12px; padding:2px 3px; white-space: nowrap;">
+                                    <option value="filter">Filter...</option>
+                                    <option value="notreplied">Comments that I have not replied to</option>
+                                    <option value="needfollowup">Comments that have replies which need to be follow up on</option>
+                                    <option value="questions">Comments that contain a question mark</option>
+                                    <option value="questionsnoreplies">That contain a question that I have not replied to</option>
+                                    <option value="links">That contain links (urls)</option>
+                                    <option value="hearted">That I hearted</option>
+                                    <option value="nothearted">That I have not hearted</option>
+                                    <option value="notreacted">That I have not reacted to</option>
+                                    <option value="haswords">Comments that contain the word(s)...</option>
+                                </select>
+                            </div>-->
+
+                            <div style="clear:both"></div>
+                            <div style="line-height:17px; margin-bottom:6px; float:left">
+                                <img class="quick-link" src="{PLUGIN_FILE_ROOT}/images/icons/analytics.png"
+                                     style="vertical-align: text-top; height:12px;">
+                                <a target="new" href="https://www.youtube.com/analytics?o=U#;fi=v-{0}"
+                                   class="tb-font-size-lb tb-font-cbold">Analytics</a>
+                            </div>
+
+                            <div style="padding-left:20px; line-height:17px; margin-bottom:6px; float:left"
+                                 class="tb-font-book">
+                                <a target="new" id="tb-videos-list-quick-link-overview"
+                                   href="https://www.youtube.com/analytics?o=U#;fi=v-{0}" class="tb-font-size-xs">Overview</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-realtime" href="" class="tb-font-size-xs">Realtime</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-earnings" href="" class="tb-font-size-xs">Earnings</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-watchtime" href=""
+                                   class="tb-font-size-xs">Watch Time</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-audience-retention" href=""
+                                   class="tb-font-size-xs">Audience Retention</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-demographics" href=""
+                                   class="tb-font-size-xs">Demographics</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-playback-locations" href=""
+                                   class="tb-font-size-xs">Playback Locations</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-traffic-sources" href=""
+                                   class="tb-font-size-xs">Traffic Sources</a><br/>
+                            </div>
+                            <div style="padding-left:20px; line-height:17px; margin-bottom:6px;float:left"
+                                 class="tb-font-book">
+                                <a target="new" id="tb-videos-list-quick-link-devices" href="" class="tb-font-size-xs">Devices</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-subscribers" href=""
+                                   class="tb-font-size-xs">Subscribers</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-likes" href="" class="tb-font-size-xs">Likes
+                                    and Dislikes</a><br/>
+                                <a target="new" id="tb-videos-list-quick-link-in-playlists"
+                                   href="https://www.youtube.com/analytics?o=U#fi=v-{0},r=videos_in_playlists"
+                                   class="tb-font-size-xs">Playlists</a><br/>
+                                <!--<a target="new" id="tb-videos-list-quick-link-comments" href="https://www.youtube.com/analytics?o=U#fi=v-{0},r=comments" class="tb-font-size-xs">Comments</a><br />-->
+                                <a target="new" id="tb-videos-list-quick-link-sharing" href="" class="tb-font-size-xs">Sharing</a><br/>
+                                <!--<a target="new" id="tb-videos-list-quick-link-annotations" href="https://www.youtube.com/analytics?o=U#fi=v-{0},r=annotations" class="tb-font-size-xs">Annotations</a><br />-->
+                                <a target="new" id="tb-videos-list-quick-link-cards" href="" class="tb-font-size-xs">Cards</a><br/>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+
+                    </div>
+                    <div id="tb-videoslist-launchpad-tab"
+                         class="tb-videoslist-tab-container tb-videos-list-pad-container" style="display:none;">
+                        <div class="tb-videoslist-launchpad-loaded tb-width100-percent">
+                            <div style="float:left;width:33%">
+                                <div class="tb-videoslist-launchpad-header">
+                                    <span>CHECKLIST TASKS</span>
+                                </div>
+                                <div class="tb-margin-top15 tb-videoslist-launchpad-checklist-hasdata"
+                                     style="text-align:center">
+                                    <span class="tb-font-size28">
+                                        <img src="{PLUGIN_FILE_ROOT}/images/icons/menu/check-big.png"
+                                             style="height:24px; position:relative; top:2px;"/>
+                                        <a target="_blank" style="text-decoration:underline"
+                                           class="tb-videoslist-launchpad-checklist-remaining"></a>
+                                    </span>
+                                    <br/>
+                                    <span class="tb-margin-left5 tb-font-size11">
+                                        <span class="tb-videoslist-launchpad-checklist-percentComplete"></span>
+                                        <span> Complete</span>
+                                    </span>
+                                </div>
+                                <div class="tb-margin-top15 tb-videoslist-launchpad-checklist-nodata"
+                                     style="text-align:center">
+                                    <span class="tb-font-size28">
+                                        <img src="{PLUGIN_FILE_ROOT}/images/icons/menu/check-big.png"
+                                             style="height:24px; position:relative; top:2px;"/>
+                                        -
+                                    </span>
+                                </div>
+                            </div>
+                            <div style="float:left;width:33%; border-left:dashed 1px #ddd;">
+                                <div class="tb-videoslist-launchpad-header">
+                                    <span>BEST PRACTICES</span>
+                                </div>
+                                <div class="tb-videoslist-launchpad-bestpractices-hasdata tb-margin-top15"
+                                     style="text-align:center">
+                                    <span class="tb-font-size28">
+                                        <img src="{PLUGIN_FILE_ROOT}/images/icons/menu/book-big.png"
+                                             style="height:24px; position:relative; top:2px;"/>
+                                        <a target="_blank" style="text-decoration:underline"
+                                           class="tb-videoslist-launchpad-bestpractices-remaining"></a>
+                                    </span>
+                                    <br/>
+                                    <span class="tb-margin-left5 tb-font-size11">
+                                        <span class="tb-videoslist-launchpad-bestpractices-percentComplete"></span>
+                                        <span> Complete</span>
+                                    </span>
+                                </div>
+                                <div class="tb-videoslist-launchpad-bestpractices-nodata tb-margin-top15"
+                                     style="text-align:center">
+                                    <span class="tb-font-size28">
+                                        <img src="{PLUGIN_FILE_ROOT}/images/icons/menu/book-big.png"
+                                             style="height:24px; position:relative; top:2px;"/>
+                                        -
+                                    </span>
+                                </div>
+                            </div>
+                            <div style="float:left;width:33%;border-left:dashed 1px #ddd;">
+                                <div class="tb-videoslist-launchpad-header">
+                                    <span>OPPORTUNITIES</span>
+                                </div>
+                                <div class="tb-videoslist-launchpad-opportunities-hasdata tb-margin-top15"
+                                     style="text-align:center">
+                                    <span class="tb-font-size28">
+                                        <img src="{PLUGIN_FILE_ROOT}/images/icons/menu/lightbulb-big.png"
+                                             style="height:24px; position:relative; top:2px;"/>
+                                        <a target="_blank" style="text-decoration:underline"
+                                           class="tb-videoslist-launchpad-opportunities-remaining"></a>
+                                    </span>
+                                    <br/>
+                                    <span class="tb-margin-left5 tb-font-size11">
+                                        <span class="tb-videoslist-launchpad-opportunities-percentComplete"></span>
+                                        <span>
+                                            Complete
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="tb-videoslist-launchpad-opportunities-nodata tb-margin-top15"
+                                     style="text-align:center">
+                                    <span class="tb-font-size28">
+                                        <img src="{PLUGIN_FILE_ROOT}/images/icons/menu/lightbulb-big.png"
+                                             style="height:24px; position:relative; top:2px;"/>
+                                        -
+                                    </span>
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="tb-margin-top15 tb-padding-top10 tb-padding-bottom15"
+                                 style="text-align:center;border-top:solid 1px #ccc;">
+                                <a class="tb-move-down10 tb-videoslist-launchpad-videosummary" href="" target="_blank"
+                                   style="font-weight:500; font-size:18px; text-decoration:underline;">
+                                    Manage this Video in Launch Pad
+                                </a>
+                                <img src="{PLUGIN_FILE_ROOT}/images/icons/external.png"
+                                     style="position:relative; top:8px; left:2px;"/>
+                            </div>
+                        </div>
+                        <div class="tb-videoslist-launchpad-loading" style="height:110px; text-align:center;">
+                            <span class="tb-spinner tb-margin-top15"></span>
+                            <span>
+                                Loading Launchpad...
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="tb-videoslist-info-tab"
+                         class="tb-videoslist-tab-container tb-videos-list-pad-container-left" style="display:none;">
+
+                        <div style="padding:0 0 10px" class="tb-width100-percent">
+                            <b>Video Id</b><br/>
+                            <input type="text" class="tb-videos-list-info-video-id tb-material-input" readonly/>
+                            <button title="Copy Video Id" class="tb-btn-blue tb-video-id-copy"
+                                    data-clipboard-action="copy" data-clipboard-text="">Copy
+                            </button>
+                        </div>
+                        <div style="padding:0 0 20px" class="tb-width100-percent">
+                            <b>Direct Video Link</b><br/>
+                            <input type="text" class="tb-videos-list-info-video-link tb-material-input" readonly/>
+                            <button title="Copy Direct Video Link" class="tb-btn-blue tb-video-link-copy"
+                                    data-clipboard-action="copy" data-clipboard-text="">Copy
+                            </button>
+                        </div>
+                        <div class="tb-video-list-playlists-container tb-width100-percent"
+                             style="max-height:200px; overflow:auto;">
+
+                        </div>
+                        <br/><br/>
+                    </div>
+
+                    <div id="tb-videoslist-notes-tab" class="tb-videoslist-tab-container tb-videos-list-pad-container"
+                         style="display:none;">
+
+                        <div class="tb-videoslist-notes-loading" style="padding:15px 0 30px; text-align:center;">
+                            <span class="tb-spinner"></span>
+                        </div>
+
+                        <div class="tb-videoslist-notes-loaded tb-width100-percent" style="display:none; color:#666; ">
+                            <textarea data-notes-id="{0}" style="width:100%;height:220px"
+                                      class="yt-uix-form-input-textarea"></textarea>
+                            <div style="text-align:right; left:-10px; padding:5px;">
+                                <span class="tb-videoslist-notes-saved"
+                                      style="color:green; padding-right:10px; display:none;">Saved!</span>
+                                <button class="tb-videoslist-save-notes tb-btn-blue" data-id="{0}" type="button">save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end new layout -->
+        </div>
+    </div>
+</div>
+
+<div style="display:none" type="text/template" id="tb-videos-new-tab-template">
+    <a class="tb-videos-new-tab-button tb-margin-left10" style="text-decoration:none; display: inline;" href="{0}"
+       target="_blank" title="Open in new tab"><img src="{PLUGIN_FILE_ROOT}/images/icons/external.png"/></a>
+</div>
+
+<div style="display:none" type="text/template" id="tb-studio-videos-list-dropdown-template">
+    <span class="tb-studio-videos-list-dropdown tb-studio-videos-list-dropdown--new-hover" data-id="{0}"
+          data-title="{1}" data-description="{2}" data-thumbnail="{3}" data-views="{4}"
+          style="position:relative; top:-4px; background-color:transparent !important;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 587.76 472" id="tb-icon-transparent"
+             style="position: relative; left: 6px; top: -2px;">
+            <path class="a"
+                  d="M353,383.06l144.7-86.14L370.52,225V120.44S512.28,91.58,571.25,225s-56.88,212.44-83.64,226.66-108.73,37.63-174,0S220.8,358,220.8,296.92V0H353V383.06"/>
+            <path class="a" d="M69.42,0H200.73V465.86H69.42V225H0V120.44H69.42V0"/>
+        </svg>
+        <i class="material-icons tb-studio-videos-menu-carat tb-move-down3">expand_more</i>
+    </span>
+</div>

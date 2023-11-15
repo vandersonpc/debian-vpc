@@ -1,0 +1,14 @@
+2023/11/15-00:34:38.453 6abf Reusing MANIFEST /home/vanderson/.config/thorium/Profile 1/IndexedDB/chrome-extension_ppnfnillfndkellpbphafglnljdefjph_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/15-00:34:38.454 6abf Recovering log #98
+2023/11/15-00:34:38.454 6abf Reusing old log /home/vanderson/.config/thorium/Profile 1/IndexedDB/chrome-extension_ppnfnillfndkellpbphafglnljdefjph_0.indexeddb.leveldb/000098.log 
+2023/11/15-00:34:38.454 6abf Delete type=2 #96
+2023/11/15-00:34:38.499 6aae Level-0 table #103: started
+2023/11/15-00:34:38.514 6aae Level-0 table #103: 880 bytes OK
+2023/11/15-00:34:38.527 6aae Delete type=0 #98
+2023/11/15-00:34:38.527 6aa0 Manual compaction at level-0 from '\x00\x1d\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x1e\x00\x00\x00' @ 0 : 0; will stop at '\x00\x1d\x00\x00\x05' @ 976 : 1
+2023/11/15-00:34:38.527 6aa0 Compacting 1@0 + 1@1 files
+2023/11/15-00:34:38.539 6aa0 Generated table #104@0: 49 keys, 1496 bytes
+2023/11/15-00:34:38.539 6aa0 Compacted 1@0 + 1@1 files => 1496 bytes
+2023/11/15-00:34:38.558 6aa0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/11/15-00:34:38.559 6aa0 Delete type=2 #103
+2023/11/15-00:34:38.559 6aa0 Manual compaction at level-0 from '\x00\x1d\x00\x00\x05' @ 976 : 1 .. '\x00\x1e\x00\x00\x00' @ 0 : 0; will stop at (end)
